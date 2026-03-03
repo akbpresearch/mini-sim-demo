@@ -1,0 +1,26 @@
+{
+  "product_headline": "Magic Spoon No-Crash Clean Energy Bar",
+  "brand_name": "Magic Spoon",
+  "consumer_insight": "Busy professionals and active individuals need sustained energy without the sugar crash that comes with typical energy bars and snacks.",
+  "main_benefits": [
+    "13g protein per bar",
+    "No sugar crash — only 1g sugar",
+    "Clean ingredients — no artificial sweeteners",
+    "Sustained energy for hours"
+  ],
+  "reasons_to_believe": [
+    "From Magic Spoon, the brand that reinvented cereal",
+    "Whey protein isolate and allulose for clean fuel",
+    "No artificial colors, flavors, or preservatives",
+    "Grain-free and gluten-free"
+  ],
+  "price_point": "$29.99 for a box of 12 bars ($2.50/bar)",
+  "pack_size": "Box of 12 bars (45g each)",
+  "product_image": null,
+  "competitors": [
+    "RXBAR ($2.50/bar)",
+    "KIND Protein Bar ($1.75/bar)",
+    "Built Bar ($2.00/bar)",
+    "Quest Protein Bar ($2.50/bar)"
+  ]
+}

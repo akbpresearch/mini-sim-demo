@@ -1,0 +1,42 @@
+{
+  "product": {
+    "name": "Chill Culture Calm Crunch Minis",
+    "brand": "Chill Culture",
+    "price": 6.49,
+    "category": "Health Foods > Functional Snacks > Adaptogenic Snacks",
+    "description": "Crunchy cocoa clusters infused with adaptogens for functional relaxation. These mini bite-sized clusters combine oat crisps, dark cocoa, a hint of sea salt, and a functional blend of ashwagandha + L-theanine. Designed for Gen Z 'wind-down' moments -- late-night streaming, post-social decompressing, or quick study breaks -- they deliver indulgent flavor with calming support and no crash.",
+    "features": [
+      "Ashwagandha + L-theanine for calm",
+      "8g plant protein",
+      "No artificial colors",
+      "Bold dark cocoa flavor",
+      "6 oz pouch — $6.49"
+    ]
+  },
+  "competitors": [
+    {
+      "name": "Catalina Crunch",
+      "brand": "Catalina Crunch",
+      "price": 8.99,
+      "rating": 4.1,
+      "total_ratings": 5400,
+      "key_feature": "Keto-friendly, low-sugar cereal with plant protein and prebiotic fiber"
+    },
+    {
+      "name": "Nature Valley",
+      "brand": "Nature Valley",
+      "price": 4.29,
+      "rating": 4.5,
+      "total_ratings": 15400,
+      "key_feature": "Crunchy oats and honey granola, widely available and affordable whole-grain snack"
+    },
+    {
+      "name": "MegaFood",
+      "brand": "MegaFood",
+      "price": 16.99,
+      "rating": 4.5,
+      "total_ratings": 3100,
+      "key_feature": "Whole-food sourced supplements with real food like farm-fresh oranges, non-GMO and tested for 125+ pesticides"
+    }
+  ]
+}

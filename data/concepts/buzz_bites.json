@@ -1,0 +1,42 @@
+{
+  "product": {
+    "name": "Buzz Bites Focus + Energy Popcorn Clusters",
+    "brand": "Buzz Bites",
+    "price": 5.99,
+    "category": "Health Foods > Functional Snacks > Energy Snacks",
+    "description": "Popcorn clusters infused with natural caffeine for clean, focused energy. Clusters of air-popped popcorn, peanut butter drizzle, and cacao nibs enhanced with green coffee extract and ginseng. Crafted for Gen Z productivity moments -- study marathons, late-night projects, creative bursts. Each serving offers a balanced sweet-salty crunch with a clean uplift, no jitters.",
+    "features": [
+      "Natural caffeine",
+      "6g protein",
+      "Sweet + salty flavor",
+      "No artificial additives",
+      "8 oz bag — $5.99"
+    ]
+  },
+  "competitors": [
+    {
+      "name": "Red Bull",
+      "brand": "Red Bull",
+      "price": 2.49,
+      "rating": 4.7,
+      "total_ratings": 112000,
+      "key_feature": "Iconic energy drink with 80mg caffeine per can for quick alertness and focus"
+    },
+    {
+      "name": "Boom Chicka Pop",
+      "brand": "Boom Chicka",
+      "price": 4.49,
+      "rating": 4.5,
+      "total_ratings": 10800,
+      "key_feature": "Light, crunchy kettle corn made with simple ingredients and no artificial flavors"
+    },
+    {
+      "name": "Skinny Pop",
+      "brand": "Skinny",
+      "price": 3.99,
+      "rating": 4.6,
+      "total_ratings": 25100,
+      "key_feature": "Pure popped perfection with just three ingredients: popcorn, oil, and salt"
+    }
+  ]
+}

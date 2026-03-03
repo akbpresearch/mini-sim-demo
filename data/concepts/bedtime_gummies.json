@@ -1,0 +1,42 @@
+{
+  "product": {
+    "name": "CalmKids Bedtime Wind-Down Gummies",
+    "brand": "CalmKids",
+    "price": 14.99,
+    "category": "Health & Household > Children's Supplements > Sleep Gummies",
+    "description": "Chamomile + magnesium gummies that help toddlers transition to bedtime. A natural, melatonin-free nighttime gummy designed to be part of a predictable bedtime ritual. Made with chamomile and magnesium, the gummies provide gentle relaxation support to help toddlers wind down after a long day. Mild in flavor, soft in texture, and easy for little ones to enjoy.",
+    "features": [
+      "No melatonin",
+      "No artificial flavors or colors",
+      "Formulated for toddlers ages 1-3",
+      "30-count bottle — $14.99 / 60-count — $24.99",
+      "Found in the baby / toddler supplements section"
+    ]
+  },
+  "competitors": [
+    {
+      "name": "Zarbee's",
+      "brand": "Zarbee's",
+      "price": 11.99,
+      "rating": 4.4,
+      "total_ratings": 9200,
+      "key_feature": "Pediatrician-recommended children's melatonin gummies with natural flavors, drug-free"
+    },
+    {
+      "name": "Spring Valley",
+      "brand": "Spring Valley",
+      "price": 6.49,
+      "rating": 4.2,
+      "total_ratings": 3400,
+      "key_feature": "Budget-friendly kids' melatonin gummies available at Walmart with basic sleep support"
+    },
+    {
+      "name": "Olly",
+      "brand": "Olly",
+      "price": 13.99,
+      "rating": 4.3,
+      "total_ratings": 8700,
+      "key_feature": "Tasty, Instagram-friendly gummy vitamins with melatonin, L-theanine, and botanicals for sleep"
+    }
+  ]
+}

@@ -1,0 +1,5271 @@
+{
+  "meta": {
+    "total_audiences": 100,
+    "source_respondents": 160,
+    "source_segments": [
+      "Original",
+      "Moms",
+      "Gen Z"
+    ],
+    "generation_method": "Demographic sampling + tuning guideline mapping",
+    "tuning_guidelines_version": "decision_factor_tuning.json",
+    "seed": 42,
+    "xgb_scale_factors": {
+      "taste_flavor": 0.3636,
+      "health_nutrition": 0.3889,
+      "value_price": 0.3571,
+      "convenience": 0.3846,
+      "comparison": 0.3333,
+      "repurchase_intent": 0.2,
+      "use_case": 0.3125,
+      "quality_issues": 0.25
+    }
+  },
+  "demographic_distributions": {
+    "age": {
+      "18-24": 0.131,
+      "25-29": 0.294,
+      "30-34": 0.156,
+      "35-39": 0.225,
+      "40-44": 0.075,
+      "45-49": 0.088,
+      "50-55": 0.031
+    },
+    "gender": {
+      "Woman": 0.7,
+      "Man": 0.287,
+      "Non-binary": 0.013
+    },
+    "household_income_in_usd": {
+      "$100,000 - $149,999": 0.331,
+      "$80,000 - $99,999": 0.169,
+      "$60,000 - $79,999": 0.163,
+      "$150,000 - $199,999": 0.1,
+      "> $200,000": 0.094,
+      "$40,000 - $59,999": 0.087,
+      "$30,000 - $39,999": 0.056
+    },
+    "race___ethnicity": {
+      "White": 0.556,
+      "Black or African American": 0.144,
+      "Hispanic or Latino": 0.144,
+      "Asian": 0.094,
+      "Native Hawaiian or Pacific Islander": 0.013,
+      "middle eastern/north african": 0.006,
+      "marylandguy89@gmail.com": 0.006,
+      "american indian and white": 0.006,
+      "Middle Eastern ": 0.006,
+      "Indian & South African ": 0.006,
+      "Bi-Racial; White and African American": 0.006,
+      "Jewish": 0.006,
+      "asian & white": 0.006
+    },
+    "level_of_education": {
+      "Undergraduate degree": 0.469,
+      "Postgraduate degree": 0.294,
+      "Some college": 0.181,
+      "Finished high school": 0.05,
+      "Vocational / trade school": 0.006
+    },
+    "marital_status": {
+      "Married or in a civil union": 0.588,
+      "Never married": 0.381,
+      "Divorced or separated": 0.031
+    },
+    "employment_status": {
+      "Full-time employed": 0.6,
+      "Homemaker": 0.106,
+      "Part-time employed": 0.1,
+      "Full-time student": 0.069,
+      "Part-time employed, Homemaker": 0.025,
+      "Unemployed": 0.025,
+      "Part-time employed, Full-time student": 0.025,
+      "Full-time employed, Part-time employed": 0.013,
+      "Homemaker, Unemployed": 0.006,
+      "Full-time employed, Part-time employed, Homemaker": 0.006,
+      "Homemaker, Full-time student": 0.006,
+      "Full-time employed, Homemaker": 0.006,
+      "Part-time employed, Part-time student": 0.006,
+      "Full-time employed, Part-time student": 0.006
+    },
+    "children": {
+      "No children": 0.4,
+      "Toddler (1-3 years)": 0.138,
+      "Infant (<1 year), Toddler (1-3 years)": 0.069,
+      "Toddler (1-3 years), School aged (6-12 years)": 0.056,
+      "Adult (18+ years)": 0.05,
+      "Toddler (1-3 years), Preschooler (4-5 years)": 0.044,
+      "Adolescent (13-17 years)": 0.037,
+      "Infant (<1 year), Toddler (1-3 years), Preschooler (4-5 years)": 0.031,
+      "School aged (6-12 years)": 0.031,
+      "School aged (6-12 years), Adolescent (13-17 years)": 0.025,
+      "Infant (<1 year)": 0.019,
+      "Infant (<1 year), Toddler (1-3 years), School aged (6-12 years)": 0.019,
+      "Infant (<1 year), Toddler (1-3 years), Preschooler (4-5 years), School aged (6-12 years)": 0.013,
+      "Toddler (1-3 years), Preschooler (4-5 years), School aged (6-12 years), Adult (18+ years)": 0.006,
+      "Infant (<1 year), Toddler (1-3 years), School aged (6-12 years), Adolescent (13-17 years)": 0.006,
+      "Toddler (1-3 years), Preschooler (4-5 years), Adolescent (13-17 years)": 0.006,
+      "Toddler (1-3 years), Preschooler (4-5 years), School aged (6-12 years)": 0.006,
+      "Preschooler (4-5 years)": 0.006,
+      "Infant (<1 year), Toddler (1-3 years), Adolescent (13-17 years)": 0.006,
+      "School aged (6-12 years), Adult (18+ years)": 0.006,
+      "Preschooler (4-5 years), School aged (6-12 years)": 0.006,
+      "Adolescent (13-17 years), Adult (18+ years)": 0.006,
+      "Infant (<1 year), School aged (6-12 years), Adolescent (13-17 years)": 0.006,
+      "Toddler (1-3 years), Pregnant": 0.006
+    },
+    "living_situation": {
+      "Live with a husband/wife": 0.529,
+      "Live alone": 0.142,
+      "Live with a significant other": 0.123,
+      "Live with roommates": 0.116,
+      "Live with parents": 0.077,
+      "None of the above": 0.013
+    },
+    "neighborhood_type": {
+      "Suburban": 0.622,
+      "Urban": 0.288,
+      "Rural": 0.083,
+      "Other": 0.006
+    },
+    "region": {
+      "Texas": 0.113,
+      "New York": 0.087,
+      "Pennsylvania": 0.087,
+      "Georgia": 0.081,
+      "Florida": 0.069,
+      "California": 0.062,
+      "Ohio": 0.056,
+      "Washington": 0.05,
+      "Massachusetts": 0.037,
+      "Illinois": 0.037,
+      "New Jersey": 0.031,
+      "Arizona": 0.031,
+      "Virginia": 0.025,
+      "Minnesota": 0.025,
+      "Alabama": 0.025,
+      "Michigan": 0.025,
+      "Wisconsin": 0.019,
+      "Utah": 0.013,
+      "Colorado": 0.013,
+      "Connecticut": 0.013,
+      "New Hampshire": 0.013,
+      "North Carolina": 0.013,
+      "Nevada": 0.006,
+      "Tennessee": 0.006,
+      "Arkansas": 0.006,
+      "Maryland": 0.006,
+      "Kentucky": 0.006,
+      "Nebraska": 0.006,
+      "Missouri": 0.006,
+      "Oklahoma": 0.006,
+      "Iowa": 0.006,
+      "Idaho": 0.006,
+      "South Carolina": 0.006,
+      "Indiana": 0.006
+    },
+    "home_owner": {
+      "Yes": 0.592,
+      "No": 0.408
+    },
+    "work_setting": {
+      "Hybrid": 0.43,
+      "In-person": 0.312,
+      "Remote": 0.258
+    }
+  },
+  "audiences": [
+    {
+      "audience_id": 1,
+      "segment": "Moms",
+      "demographics": {
+        "age": 38,
+        "gender": "Man",
+        "household_income": "> $200,000",
+        "race_ethnicity": "Hispanic or Latino",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Infant (<1 year), Toddler (1-3 years), School aged (6-12 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Texas",
+        "home_owner": "No",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Immunity"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.73,
+        "value_price": 0.39,
+        "taste_flavor": 0.4,
+        "comparison": 0.75,
+        "health_nutrition": 0.71,
+        "repurchase_intent": 0.51,
+        "quality_issues": 0.42,
+        "convenience": 0.77
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1455,
+        "health_nutrition": 0.2761,
+        "value_price": 0.1393,
+        "convenience": 0.2962,
+        "comparison": 0.25,
+        "repurchase_intent": 0.102,
+        "use_case": 0.2281,
+        "quality_issues": 0.105
+      },
+      "xgb_buy_probability": 80.2
+    },
+    {
+      "audience_id": 2,
+      "segment": "Original",
+      "demographics": {
+        "age": 34,
+        "gender": "Woman",
+        "household_income": "$60,000 - $79,999",
+        "race_ethnicity": "Black or African American",
+        "education": "Postgraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "No children",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Suburban",
+        "region": "Texas",
+        "home_owner": "No",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Energy",
+          "General wellness",
+          "Stress / calm",
+          "Gut health"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Local/specialty stores"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.56,
+        "value_price": 0.16,
+        "taste_flavor": 0.27,
+        "comparison": 0.34,
+        "health_nutrition": 0.67,
+        "repurchase_intent": 0.17,
+        "quality_issues": 0.56,
+        "convenience": 0.74
+      },
+      "predicted_buy_tendency": "weak",
+      "estimated_buy_range": "30-50%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.0982,
+        "health_nutrition": 0.2606,
+        "value_price": 0.0571,
+        "convenience": 0.2846,
+        "comparison": 0.1133,
+        "repurchase_intent": 0.034,
+        "use_case": 0.175,
+        "quality_issues": 0.14
+      },
+      "xgb_buy_probability": 69.0
+    },
+    {
+      "audience_id": 3,
+      "segment": "Original",
+      "demographics": {
+        "age": 39,
+        "gender": "Man",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Part-time employed, Homemaker",
+        "children": "Toddler (1-3 years), Preschooler (4-5 years)",
+        "living_situation": "Live with roommates",
+        "neighborhood_type": "Urban",
+        "region": "California",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Discount/value stores (Costco, Aldi)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.71,
+        "value_price": 0.42,
+        "taste_flavor": 0.41,
+        "comparison": 0.7,
+        "health_nutrition": 0.77,
+        "repurchase_intent": 0.52,
+        "quality_issues": 0.36,
+        "convenience": 0.83
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1491,
+        "health_nutrition": 0.2994,
+        "value_price": 0.15,
+        "convenience": 0.3192,
+        "comparison": 0.2333,
+        "repurchase_intent": 0.104,
+        "use_case": 0.2219,
+        "quality_issues": 0.09
+      },
+      "xgb_buy_probability": 94.5
+    },
+    {
+      "audience_id": 4,
+      "segment": "Original",
+      "demographics": {
+        "age": 26,
+        "gender": "Man",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "middle eastern/north african",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Toddler (1-3 years)",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Urban",
+        "region": "Michigan",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.83,
+        "value_price": 0.47,
+        "taste_flavor": 0.4,
+        "comparison": 0.66,
+        "health_nutrition": 0.7,
+        "repurchase_intent": 0.52,
+        "quality_issues": 0.45,
+        "convenience": 0.85
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1455,
+        "health_nutrition": 0.2722,
+        "value_price": 0.1679,
+        "convenience": 0.3269,
+        "comparison": 0.22,
+        "repurchase_intent": 0.104,
+        "use_case": 0.2594,
+        "quality_issues": 0.1125
+      },
+      "xgb_buy_probability": 90.3
+    },
+    {
+      "audience_id": 5,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 31,
+        "gender": "Woman",
+        "household_income": "$40,000 - $59,999",
+        "race_ethnicity": "Hispanic or Latino",
+        "education": "Postgraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Part-time employed",
+        "children": "No children",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "New York",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness"
+        ],
+        "snack_approach": "I look for convenience",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.56,
+        "value_price": 0.2,
+        "taste_flavor": 0.49,
+        "comparison": 0.5,
+        "health_nutrition": 0.53,
+        "repurchase_intent": 0.41,
+        "quality_issues": 0.35,
+        "convenience": 0.76
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1782,
+        "health_nutrition": 0.2061,
+        "value_price": 0.0714,
+        "convenience": 0.2923,
+        "comparison": 0.1667,
+        "repurchase_intent": 0.082,
+        "use_case": 0.175,
+        "quality_issues": 0.0875
+      },
+      "xgb_buy_probability": 75.2
+    },
+    {
+      "audience_id": 6,
+      "segment": "Original",
+      "demographics": {
+        "age": 40,
+        "gender": "Woman",
+        "household_income": "> $200,000",
+        "race_ethnicity": "Black or African American",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "No children",
+        "living_situation": "Live with a significant other",
+        "neighborhood_type": "Suburban",
+        "region": "North Carolina",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Immunity",
+          "Gut health",
+          "Energy"
+        ],
+        "snack_approach": "I look for convenience",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.73,
+        "value_price": 0.44,
+        "taste_flavor": 0.47,
+        "comparison": 0.82,
+        "health_nutrition": 0.65,
+        "repurchase_intent": 0.55,
+        "quality_issues": 0.18,
+        "convenience": 0.78
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1709,
+        "health_nutrition": 0.2528,
+        "value_price": 0.1571,
+        "convenience": 0.3,
+        "comparison": 0.2733,
+        "repurchase_intent": 0.11,
+        "use_case": 0.2281,
+        "quality_issues": 0.045
+      },
+      "xgb_buy_probability": 67.3
+    },
+    {
+      "audience_id": 7,
+      "segment": "Original",
+      "demographics": {
+        "age": 44,
+        "gender": "Woman",
+        "household_income": "> $200,000",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "Infant (<1 year), Toddler (1-3 years), Adolescent (13-17 years)",
+        "living_situation": "None of the above",
+        "neighborhood_type": "Suburban",
+        "region": "Washington",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Energy",
+          "General wellness",
+          "Gut health"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.79,
+        "value_price": 0.45,
+        "taste_flavor": 0.36,
+        "comparison": 0.71,
+        "health_nutrition": 0.79,
+        "repurchase_intent": 0.5,
+        "quality_issues": 0.33,
+        "convenience": 0.82
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1309,
+        "health_nutrition": 0.3072,
+        "value_price": 0.1607,
+        "convenience": 0.3154,
+        "comparison": 0.2367,
+        "repurchase_intent": 0.1,
+        "use_case": 0.2469,
+        "quality_issues": 0.0825
+      },
+      "xgb_buy_probability": 96.8
+    },
+    {
+      "audience_id": 8,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 25,
+        "gender": "Woman",
+        "household_income": "$60,000 - $79,999",
+        "race_ethnicity": "Hispanic or Latino",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "No children",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Urban",
+        "region": "New York",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Stress / calm"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.71,
+        "value_price": 0.34,
+        "taste_flavor": 0.45,
+        "comparison": 0.65,
+        "health_nutrition": 0.73,
+        "repurchase_intent": 0.5,
+        "quality_issues": 0.43,
+        "convenience": 0.78
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1636,
+        "health_nutrition": 0.2839,
+        "value_price": 0.1214,
+        "convenience": 0.3,
+        "comparison": 0.2167,
+        "repurchase_intent": 0.1,
+        "use_case": 0.2219,
+        "quality_issues": 0.1075
+      },
+      "xgb_buy_probability": 85.7
+    },
+    {
+      "audience_id": 9,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 20,
+        "gender": "Woman",
+        "household_income": "$150,000 - $199,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Unemployed",
+        "children": "Infant (<1 year)",
+        "living_situation": "Live with roommates",
+        "neighborhood_type": "Urban",
+        "region": "Alabama",
+        "home_owner": "No",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Gut health",
+          "Energy",
+          "Immunity"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.71,
+        "value_price": 0.53,
+        "taste_flavor": 0.49,
+        "comparison": 0.78,
+        "health_nutrition": 0.7,
+        "repurchase_intent": 0.35,
+        "quality_issues": 0.45,
+        "convenience": 0.88
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1782,
+        "health_nutrition": 0.2722,
+        "value_price": 0.1893,
+        "convenience": 0.3385,
+        "comparison": 0.26,
+        "repurchase_intent": 0.07,
+        "use_case": 0.2219,
+        "quality_issues": 0.1125
+      },
+      "xgb_buy_probability": 90.6
+    },
+    {
+      "audience_id": 10,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 22,
+        "gender": "Man",
+        "household_income": "$60,000 - $79,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time student",
+        "children": "No children",
+        "living_situation": "Live with roommates",
+        "neighborhood_type": "Urban",
+        "region": "New York",
+        "home_owner": "No",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "Immunity",
+          "Energy",
+          "General wellness",
+          "Stress / calm"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.63,
+        "value_price": 0.28,
+        "taste_flavor": 0.46,
+        "comparison": 0.5,
+        "health_nutrition": 0.7,
+        "repurchase_intent": 0.41,
+        "quality_issues": 0.43,
+        "convenience": 0.88
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1673,
+        "health_nutrition": 0.2722,
+        "value_price": 0.1,
+        "convenience": 0.3385,
+        "comparison": 0.1667,
+        "repurchase_intent": 0.082,
+        "use_case": 0.1969,
+        "quality_issues": 0.1075
+      },
+      "xgb_buy_probability": 92.2
+    },
+    {
+      "audience_id": 11,
+      "segment": "Moms",
+      "demographics": {
+        "age": 32,
+        "gender": "Woman",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Homemaker, Full-time student",
+        "children": "Toddler (1-3 years), School aged (6-12 years)",
+        "living_situation": "Live with a significant other",
+        "neighborhood_type": "Suburban",
+        "region": "Minnesota",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Stress / calm",
+          "Gut health",
+          "Energy",
+          "Immunity"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.54,
+        "value_price": 0.49,
+        "taste_flavor": 0.39,
+        "comparison": 0.45,
+        "health_nutrition": 0.75,
+        "repurchase_intent": 0.33,
+        "quality_issues": 0.49,
+        "convenience": 0.89
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1418,
+        "health_nutrition": 0.2917,
+        "value_price": 0.175,
+        "convenience": 0.3423,
+        "comparison": 0.15,
+        "repurchase_intent": 0.066,
+        "use_case": 0.1688,
+        "quality_issues": 0.1225
+      },
+      "xgb_buy_probability": 88.9
+    },
+    {
+      "audience_id": 12,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 20,
+        "gender": "Woman",
+        "household_income": "$40,000 - $59,999",
+        "race_ethnicity": "Indian & South African ",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Part-time employed, Part-time student",
+        "children": "Infant (<1 year)",
+        "living_situation": "Live with roommates",
+        "neighborhood_type": "Suburban",
+        "region": "Alabama",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness"
+        ],
+        "snack_approach": "I look for good value",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.69,
+        "value_price": 0.22,
+        "taste_flavor": 0.44,
+        "comparison": 0.47,
+        "health_nutrition": 0.57,
+        "repurchase_intent": 0.25,
+        "quality_issues": 0.33,
+        "convenience": 0.83
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.16,
+        "health_nutrition": 0.2217,
+        "value_price": 0.0786,
+        "convenience": 0.3192,
+        "comparison": 0.1567,
+        "repurchase_intent": 0.05,
+        "use_case": 0.2156,
+        "quality_issues": 0.0825
+      },
+      "xgb_buy_probability": 97.0
+    },
+    {
+      "audience_id": 13,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 20,
+        "gender": "Woman",
+        "household_income": "$60,000 - $79,999",
+        "race_ethnicity": "Hispanic or Latino",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Part-time employed, Full-time student",
+        "children": "Infant (<1 year), Toddler (1-3 years)",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Urban",
+        "region": "Pennsylvania",
+        "home_owner": "No",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "Stress / calm",
+          "General wellness"
+        ],
+        "snack_approach": "I look for good value",
+        "shopping_location": "Discount/value stores (Costco, Aldi)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.64,
+        "value_price": 0.37,
+        "taste_flavor": 0.48,
+        "comparison": 0.52,
+        "health_nutrition": 0.71,
+        "repurchase_intent": 0.11,
+        "quality_issues": 0.42,
+        "convenience": 0.76
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1745,
+        "health_nutrition": 0.2761,
+        "value_price": 0.1321,
+        "convenience": 0.2923,
+        "comparison": 0.1733,
+        "repurchase_intent": 0.022,
+        "use_case": 0.2,
+        "quality_issues": 0.105
+      },
+      "xgb_buy_probability": 82.0
+    },
+    {
+      "audience_id": 14,
+      "segment": "Moms",
+      "demographics": {
+        "age": 38,
+        "gender": "Woman",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Part-time employed",
+        "children": "Toddler (1-3 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "North Carolina",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Stress / calm",
+          "General wellness",
+          "Energy"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Discount/value stores (Costco, Aldi)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.71,
+        "value_price": 0.46,
+        "taste_flavor": 0.43,
+        "comparison": 0.78,
+        "health_nutrition": 0.76,
+        "repurchase_intent": 0.65,
+        "quality_issues": 0.4,
+        "convenience": 0.8
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1564,
+        "health_nutrition": 0.2956,
+        "value_price": 0.1643,
+        "convenience": 0.3077,
+        "comparison": 0.26,
+        "repurchase_intent": 0.13,
+        "use_case": 0.2219,
+        "quality_issues": 0.1
+      },
+      "xgb_buy_probability": 94.5
+    },
+    {
+      "audience_id": 15,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 20,
+        "gender": "Woman",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Part-time employed, Full-time student",
+        "children": "No children",
+        "living_situation": "Live with parents",
+        "neighborhood_type": "Suburban",
+        "region": "Georgia",
+        "home_owner": "No",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Stress / calm"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.63,
+        "value_price": 0.41,
+        "taste_flavor": 0.49,
+        "comparison": 0.6,
+        "health_nutrition": 0.73,
+        "repurchase_intent": 0.19,
+        "quality_issues": 0.38,
+        "convenience": 0.79
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1782,
+        "health_nutrition": 0.2839,
+        "value_price": 0.1464,
+        "convenience": 0.3038,
+        "comparison": 0.2,
+        "repurchase_intent": 0.038,
+        "use_case": 0.1969,
+        "quality_issues": 0.095
+      },
+      "xgb_buy_probability": 85.7
+    },
+    {
+      "audience_id": 16,
+      "segment": "Moms",
+      "demographics": {
+        "age": 39,
+        "gender": "Woman",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Part-time employed, Homemaker",
+        "children": "Toddler (1-3 years), Preschooler (4-5 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "New York",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness"
+        ],
+        "snack_approach": "I look for convenience",
+        "shopping_location": "Local/specialty stores"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.76,
+        "value_price": 0.47,
+        "taste_flavor": 0.45,
+        "comparison": 0.46,
+        "health_nutrition": 0.52,
+        "repurchase_intent": 0.58,
+        "quality_issues": 0.4,
+        "convenience": 0.88
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1636,
+        "health_nutrition": 0.2022,
+        "value_price": 0.1679,
+        "convenience": 0.3385,
+        "comparison": 0.1533,
+        "repurchase_intent": 0.116,
+        "use_case": 0.2375,
+        "quality_issues": 0.1
+      },
+      "xgb_buy_probability": 94.6
+    },
+    {
+      "audience_id": 17,
+      "segment": "Moms",
+      "demographics": {
+        "age": 35,
+        "gender": "Woman",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "Hispanic or Latino",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed, Part-time employed, Homemaker",
+        "children": "Infant (<1 year), Toddler (1-3 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "New York",
+        "home_owner": "Yes",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Stress / calm",
+          "Energy",
+          "General wellness"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.84,
+        "value_price": 0.53,
+        "taste_flavor": 0.38,
+        "comparison": 0.46,
+        "health_nutrition": 0.67,
+        "repurchase_intent": 0.45,
+        "quality_issues": 0.32,
+        "convenience": 0.85
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1382,
+        "health_nutrition": 0.2606,
+        "value_price": 0.1893,
+        "convenience": 0.3269,
+        "comparison": 0.1533,
+        "repurchase_intent": 0.09,
+        "use_case": 0.2625,
+        "quality_issues": 0.08
+      },
+      "xgb_buy_probability": 90.3
+    },
+    {
+      "audience_id": 18,
+      "segment": "Original",
+      "demographics": {
+        "age": 45,
+        "gender": "Woman",
+        "household_income": "$150,000 - $199,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Adolescent (13-17 years)",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Urban",
+        "region": "Wisconsin",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Stress / calm",
+          "Energy",
+          "Gut health",
+          "Immunity"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.81,
+        "value_price": 0.51,
+        "taste_flavor": 0.5,
+        "comparison": 0.73,
+        "health_nutrition": 0.71,
+        "repurchase_intent": 0.61,
+        "quality_issues": 0.37,
+        "convenience": 0.89
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1818,
+        "health_nutrition": 0.2761,
+        "value_price": 0.1821,
+        "convenience": 0.3423,
+        "comparison": 0.2433,
+        "repurchase_intent": 0.122,
+        "use_case": 0.2531,
+        "quality_issues": 0.0925
+      },
+      "xgb_buy_probability": 92.3
+    },
+    {
+      "audience_id": 19,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 25,
+        "gender": "Woman",
+        "household_income": "$60,000 - $79,999",
+        "race_ethnicity": "Hispanic or Latino",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time student",
+        "children": "Adolescent (13-17 years)",
+        "living_situation": "Live with parents",
+        "neighborhood_type": "Urban",
+        "region": "Florida",
+        "home_owner": "No",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "Stress / calm",
+          "Energy"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.75,
+        "value_price": 0.39,
+        "taste_flavor": 0.49,
+        "comparison": 0.76,
+        "health_nutrition": 0.74,
+        "repurchase_intent": 0.54,
+        "quality_issues": 0.36,
+        "convenience": 0.8
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1782,
+        "health_nutrition": 0.2878,
+        "value_price": 0.1393,
+        "convenience": 0.3077,
+        "comparison": 0.2533,
+        "repurchase_intent": 0.108,
+        "use_case": 0.2344,
+        "quality_issues": 0.09
+      },
+      "xgb_buy_probability": 96.4
+    },
+    {
+      "audience_id": 20,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 26,
+        "gender": "Woman",
+        "household_income": "$80,000 - $99,999",
+        "race_ethnicity": "Hispanic or Latino",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "No children",
+        "living_situation": "Live with parents",
+        "neighborhood_type": "Urban",
+        "region": "California",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Stress / calm"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.35,
+        "value_price": 0.16,
+        "taste_flavor": 0.12,
+        "comparison": 0.39,
+        "health_nutrition": 0.26,
+        "repurchase_intent": 0.22,
+        "quality_issues": 0.73,
+        "convenience": 0.76
+      },
+      "predicted_buy_tendency": "weak",
+      "estimated_buy_range": "30-50%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.0436,
+        "health_nutrition": 0.1011,
+        "value_price": 0.0571,
+        "convenience": 0.2923,
+        "comparison": 0.13,
+        "repurchase_intent": 0.044,
+        "use_case": 0.1094,
+        "quality_issues": 0.1825
+      },
+      "xgb_buy_probability": 61.4
+    },
+    {
+      "audience_id": 21,
+      "segment": "Original",
+      "demographics": {
+        "age": 47,
+        "gender": "Man",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Divorced or separated",
+        "employment_status": "Homemaker, Unemployed",
+        "children": "Adolescent (13-17 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Michigan",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Immunity",
+          "Energy"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Online (Amazon, Instacart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.52,
+        "value_price": 0.32,
+        "taste_flavor": 0.1,
+        "comparison": 0.34,
+        "health_nutrition": 0.46,
+        "repurchase_intent": 0.12,
+        "quality_issues": 0.32,
+        "convenience": 0.85
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.0364,
+        "health_nutrition": 0.1789,
+        "value_price": 0.1143,
+        "convenience": 0.3269,
+        "comparison": 0.1133,
+        "repurchase_intent": 0.024,
+        "use_case": 0.1625,
+        "quality_issues": 0.08
+      },
+      "xgb_buy_probability": 91.6
+    },
+    {
+      "audience_id": 22,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 26,
+        "gender": "Woman",
+        "household_income": "$150,000 - $199,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Toddler (1-3 years)",
+        "living_situation": "Live with roommates",
+        "neighborhood_type": "Rural",
+        "region": "New York",
+        "home_owner": "Yes",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Stress / calm"
+        ],
+        "snack_approach": "I look for good value",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.22,
+        "value_price": 0.33,
+        "taste_flavor": 0.34,
+        "comparison": 0.35,
+        "health_nutrition": 0.38,
+        "repurchase_intent": 0.2,
+        "quality_issues": 0.66,
+        "convenience": 0.84
+      },
+      "predicted_buy_tendency": "weak",
+      "estimated_buy_range": "30-50%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1236,
+        "health_nutrition": 0.1478,
+        "value_price": 0.1179,
+        "convenience": 0.3231,
+        "comparison": 0.1167,
+        "repurchase_intent": 0.04,
+        "use_case": 0.0688,
+        "quality_issues": 0.165
+      },
+      "xgb_buy_probability": 77.5
+    },
+    {
+      "audience_id": 23,
+      "segment": "Moms",
+      "demographics": {
+        "age": 36,
+        "gender": "Man",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Some college",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Infant (<1 year), Toddler (1-3 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "New York",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Gut health",
+          "Energy",
+          "Immunity",
+          "Stress / calm"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Discount/value stores (Costco, Aldi)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.85,
+        "value_price": 0.55,
+        "taste_flavor": 0.45,
+        "comparison": 0.76,
+        "health_nutrition": 0.7,
+        "repurchase_intent": 0.61,
+        "quality_issues": 0.44,
+        "convenience": 0.77
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1636,
+        "health_nutrition": 0.2722,
+        "value_price": 0.1964,
+        "convenience": 0.2962,
+        "comparison": 0.2533,
+        "repurchase_intent": 0.122,
+        "use_case": 0.2656,
+        "quality_issues": 0.11
+      },
+      "xgb_buy_probability": 76.9
+    },
+    {
+      "audience_id": 24,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 27,
+        "gender": "Man",
+        "household_income": "$150,000 - $199,999",
+        "race_ethnicity": "Hispanic or Latino",
+        "education": "Some college",
+        "marital_status": "Never married",
+        "employment_status": "Unemployed",
+        "children": "Infant (<1 year)",
+        "living_situation": "Live with roommates",
+        "neighborhood_type": "Suburban",
+        "region": "Florida",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "Immunity",
+          "Energy",
+          "General wellness",
+          "Stress / calm"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Discount/value stores (Costco, Aldi)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.79,
+        "value_price": 0.43,
+        "taste_flavor": 0.5,
+        "comparison": 0.82,
+        "health_nutrition": 0.78,
+        "repurchase_intent": 0.54,
+        "quality_issues": 0.38,
+        "convenience": 0.79
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1818,
+        "health_nutrition": 0.3033,
+        "value_price": 0.1536,
+        "convenience": 0.3038,
+        "comparison": 0.2733,
+        "repurchase_intent": 0.108,
+        "use_case": 0.2469,
+        "quality_issues": 0.095
+      },
+      "xgb_buy_probability": 82.9
+    },
+    {
+      "audience_id": 25,
+      "segment": "Original",
+      "demographics": {
+        "age": 40,
+        "gender": "Man",
+        "household_income": "$150,000 - $199,999",
+        "race_ethnicity": "middle eastern/north african",
+        "education": "Finished high school",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Infant (<1 year), Toddler (1-3 years), School aged (6-12 years)",
+        "living_situation": "Live with a significant other",
+        "neighborhood_type": "Suburban",
+        "region": "Pennsylvania",
+        "home_owner": "Yes",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "Immunity",
+          "General wellness"
+        ],
+        "snack_approach": "I choose based on flavor",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.73,
+        "value_price": 0.48,
+        "taste_flavor": 0.57,
+        "comparison": 0.52,
+        "health_nutrition": 0.67,
+        "repurchase_intent": 0.58,
+        "quality_issues": 0.4,
+        "convenience": 0.87
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.2073,
+        "health_nutrition": 0.2606,
+        "value_price": 0.1714,
+        "convenience": 0.3346,
+        "comparison": 0.1733,
+        "repurchase_intent": 0.116,
+        "use_case": 0.2281,
+        "quality_issues": 0.1
+      },
+      "xgb_buy_probability": 89.4
+    },
+    {
+      "audience_id": 26,
+      "segment": "Moms",
+      "demographics": {
+        "age": 38,
+        "gender": "Man",
+        "household_income": "$80,000 - $99,999",
+        "race_ethnicity": "White",
+        "education": "Some college",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Toddler (1-3 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Ohio",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Immunity",
+          "Stress / calm"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.75,
+        "value_price": 0.34,
+        "taste_flavor": 0.41,
+        "comparison": 0.74,
+        "health_nutrition": 0.79,
+        "repurchase_intent": 0.52,
+        "quality_issues": 0.4,
+        "convenience": 0.87
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1491,
+        "health_nutrition": 0.3072,
+        "value_price": 0.1214,
+        "convenience": 0.3346,
+        "comparison": 0.2467,
+        "repurchase_intent": 0.104,
+        "use_case": 0.2344,
+        "quality_issues": 0.1
+      },
+      "xgb_buy_probability": 96.4
+    },
+    {
+      "audience_id": 27,
+      "segment": "Moms",
+      "demographics": {
+        "age": 38,
+        "gender": "Woman",
+        "household_income": "$150,000 - $199,999",
+        "race_ethnicity": "Asian",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "Toddler (1-3 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Other",
+        "region": "New York",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "General wellness",
+          "Stress / calm"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Online (Amazon, Instacart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.71,
+        "value_price": 0.38,
+        "taste_flavor": 0.37,
+        "comparison": 0.68,
+        "health_nutrition": 0.67,
+        "repurchase_intent": 0.58,
+        "quality_issues": 0.34,
+        "convenience": 0.8
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1345,
+        "health_nutrition": 0.2606,
+        "value_price": 0.1357,
+        "convenience": 0.3077,
+        "comparison": 0.2267,
+        "repurchase_intent": 0.116,
+        "use_case": 0.2219,
+        "quality_issues": 0.085
+      },
+      "xgb_buy_probability": 97.7
+    },
+    {
+      "audience_id": 28,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 24,
+        "gender": "Woman",
+        "household_income": "$60,000 - $79,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "No children",
+        "living_situation": "Live with roommates",
+        "neighborhood_type": "Suburban",
+        "region": "New York",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Stress / calm",
+          "Gut health",
+          "Energy",
+          "Immunity"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.78,
+        "value_price": 0.35,
+        "taste_flavor": 0.36,
+        "comparison": 0.61,
+        "health_nutrition": 0.74,
+        "repurchase_intent": 0.31,
+        "quality_issues": 0.47,
+        "convenience": 0.89
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1309,
+        "health_nutrition": 0.2878,
+        "value_price": 0.125,
+        "convenience": 0.3423,
+        "comparison": 0.2033,
+        "repurchase_intent": 0.062,
+        "use_case": 0.2438,
+        "quality_issues": 0.1175
+      },
+      "xgb_buy_probability": 98.2
+    },
+    {
+      "audience_id": 29,
+      "segment": "Original",
+      "demographics": {
+        "age": 35,
+        "gender": "Woman",
+        "household_income": "$150,000 - $199,999",
+        "race_ethnicity": "Black or African American",
+        "education": "Postgraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Adult (18+ years)",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Suburban",
+        "region": "Pennsylvania",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Energy"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.81,
+        "value_price": 0.53,
+        "taste_flavor": 0.43,
+        "comparison": 0.76,
+        "health_nutrition": 0.67,
+        "repurchase_intent": 0.54,
+        "quality_issues": 0.21,
+        "convenience": 0.79
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1564,
+        "health_nutrition": 0.2606,
+        "value_price": 0.1893,
+        "convenience": 0.3038,
+        "comparison": 0.2533,
+        "repurchase_intent": 0.108,
+        "use_case": 0.2531,
+        "quality_issues": 0.0525
+      },
+      "xgb_buy_probability": 73.1
+    },
+    {
+      "audience_id": 30,
+      "segment": "Original",
+      "demographics": {
+        "age": 40,
+        "gender": "Woman",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Postgraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Adolescent (13-17 years), Adult (18+ years)",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Urban",
+        "region": "Michigan",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Energy",
+          "General wellness"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.79,
+        "value_price": 0.5,
+        "taste_flavor": 0.41,
+        "comparison": 0.48,
+        "health_nutrition": 0.69,
+        "repurchase_intent": 0.52,
+        "quality_issues": 0.43,
+        "convenience": 0.84
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1491,
+        "health_nutrition": 0.2683,
+        "value_price": 0.1786,
+        "convenience": 0.3231,
+        "comparison": 0.16,
+        "repurchase_intent": 0.104,
+        "use_case": 0.2469,
+        "quality_issues": 0.1075
+      },
+      "xgb_buy_probability": 88.2
+    },
+    {
+      "audience_id": 31,
+      "segment": "Moms",
+      "demographics": {
+        "age": 36,
+        "gender": "Man",
+        "household_income": "$80,000 - $99,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Toddler (1-3 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Pennsylvania",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Stress / calm",
+          "Energy"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.76,
+        "value_price": 0.4,
+        "taste_flavor": 0.37,
+        "comparison": 0.53,
+        "health_nutrition": 0.8,
+        "repurchase_intent": 0.62,
+        "quality_issues": 0.46,
+        "convenience": 0.79
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1345,
+        "health_nutrition": 0.3111,
+        "value_price": 0.1429,
+        "convenience": 0.3038,
+        "comparison": 0.1767,
+        "repurchase_intent": 0.124,
+        "use_case": 0.2375,
+        "quality_issues": 0.115
+      },
+      "xgb_buy_probability": 86.7
+    },
+    {
+      "audience_id": 32,
+      "segment": "Original",
+      "demographics": {
+        "age": 55,
+        "gender": "Man",
+        "household_income": "> $200,000",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "No children",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Washington",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Energy",
+          "General wellness",
+          "Gut health"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.74,
+        "value_price": 0.47,
+        "taste_flavor": 0.37,
+        "comparison": 0.55,
+        "health_nutrition": 0.73,
+        "repurchase_intent": 0.46,
+        "quality_issues": 0.37,
+        "convenience": 0.62
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1345,
+        "health_nutrition": 0.2839,
+        "value_price": 0.1679,
+        "convenience": 0.2385,
+        "comparison": 0.1833,
+        "repurchase_intent": 0.092,
+        "use_case": 0.2313,
+        "quality_issues": 0.0925
+      },
+      "xgb_buy_probability": 86.7
+    },
+    {
+      "audience_id": 33,
+      "segment": "Original",
+      "demographics": {
+        "age": 30,
+        "gender": "Man",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "Black or African American",
+        "education": "Postgraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "School aged (6-12 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "New York",
+        "home_owner": "No",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "General wellness",
+          "Energy"
+        ],
+        "snack_approach": "I look for convenience",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.52,
+        "value_price": 0.36,
+        "taste_flavor": 0.33,
+        "comparison": 0.29,
+        "health_nutrition": 0.46,
+        "repurchase_intent": 0.21,
+        "quality_issues": 0.69,
+        "convenience": 0.88
+      },
+      "predicted_buy_tendency": "weak",
+      "estimated_buy_range": "30-50%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.12,
+        "health_nutrition": 0.1789,
+        "value_price": 0.1286,
+        "convenience": 0.3385,
+        "comparison": 0.0967,
+        "repurchase_intent": 0.042,
+        "use_case": 0.1625,
+        "quality_issues": 0.1725
+      },
+      "xgb_buy_probability": 76.9
+    },
+    {
+      "audience_id": 34,
+      "segment": "Original",
+      "demographics": {
+        "age": 54,
+        "gender": "Man",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Postgraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "Adult (18+ years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Urban",
+        "region": "Massachusetts",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Stress / calm",
+          "General wellness",
+          "Energy",
+          "Immunity",
+          "Gut health"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.77,
+        "value_price": 0.41,
+        "taste_flavor": 0.46,
+        "comparison": 0.55,
+        "health_nutrition": 0.68,
+        "repurchase_intent": 0.63,
+        "quality_issues": 0.38,
+        "convenience": 0.68
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1673,
+        "health_nutrition": 0.2644,
+        "value_price": 0.1464,
+        "convenience": 0.2615,
+        "comparison": 0.1833,
+        "repurchase_intent": 0.126,
+        "use_case": 0.2406,
+        "quality_issues": 0.095
+      },
+      "xgb_buy_probability": 66.1
+    },
+    {
+      "audience_id": 35,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 23,
+        "gender": "Woman",
+        "household_income": "$40,000 - $59,999",
+        "race_ethnicity": "Indian & South African ",
+        "education": "Some college",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "Infant (<1 year), Toddler (1-3 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Urban",
+        "region": "Virginia",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Stress / calm",
+          "Energy",
+          "General wellness"
+        ],
+        "snack_approach": "I look for good value",
+        "shopping_location": "Discount/value stores (Costco, Aldi)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.74,
+        "value_price": 0.22,
+        "taste_flavor": 0.36,
+        "comparison": 0.56,
+        "health_nutrition": 0.76,
+        "repurchase_intent": 0.43,
+        "quality_issues": 0.37,
+        "convenience": 0.87
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1309,
+        "health_nutrition": 0.2956,
+        "value_price": 0.0786,
+        "convenience": 0.3346,
+        "comparison": 0.1867,
+        "repurchase_intent": 0.086,
+        "use_case": 0.2313,
+        "quality_issues": 0.0925
+      },
+      "xgb_buy_probability": 97.5
+    },
+    {
+      "audience_id": 36,
+      "segment": "Original",
+      "demographics": {
+        "age": 33,
+        "gender": "Man",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Adolescent (13-17 years)",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Urban",
+        "region": "New Hampshire",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Energy",
+          "Stress / calm",
+          "General wellness"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.73,
+        "value_price": 0.53,
+        "taste_flavor": 0.44,
+        "comparison": 0.53,
+        "health_nutrition": 0.72,
+        "repurchase_intent": 0.44,
+        "quality_issues": 0.33,
+        "convenience": 0.84
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.16,
+        "health_nutrition": 0.28,
+        "value_price": 0.1893,
+        "convenience": 0.3231,
+        "comparison": 0.1767,
+        "repurchase_intent": 0.088,
+        "use_case": 0.2281,
+        "quality_issues": 0.0825
+      },
+      "xgb_buy_probability": 93.0
+    },
+    {
+      "audience_id": 37,
+      "segment": "Moms",
+      "demographics": {
+        "age": 37,
+        "gender": "Woman",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "Black or African American",
+        "education": "Some college",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Homemaker",
+        "children": "Toddler (1-3 years), Preschooler (4-5 years), School aged (6-12 years), Adult (18+ years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Massachusetts",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Immunity",
+          "Stress / calm",
+          "General wellness"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Local/specialty stores"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.84,
+        "value_price": 0.54,
+        "taste_flavor": 0.42,
+        "comparison": 0.47,
+        "health_nutrition": 0.8,
+        "repurchase_intent": 0.62,
+        "quality_issues": 0.32,
+        "convenience": 0.89
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1527,
+        "health_nutrition": 0.3111,
+        "value_price": 0.1929,
+        "convenience": 0.3423,
+        "comparison": 0.1567,
+        "repurchase_intent": 0.124,
+        "use_case": 0.2625,
+        "quality_issues": 0.08
+      },
+      "xgb_buy_probability": 94.2
+    },
+    {
+      "audience_id": 38,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 24,
+        "gender": "Woman",
+        "household_income": "$30,000 - $39,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Part-time employed, Full-time student",
+        "children": "No children",
+        "living_situation": "Live with parents",
+        "neighborhood_type": "Suburban",
+        "region": "Texas",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "Stress / calm",
+          "General wellness"
+        ],
+        "snack_approach": "I look for good value",
+        "shopping_location": "Online (Amazon, Instacart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.65,
+        "value_price": 0.2,
+        "taste_flavor": 0.38,
+        "comparison": 0.54,
+        "health_nutrition": 0.67,
+        "repurchase_intent": 0.33,
+        "quality_issues": 0.4,
+        "convenience": 0.81
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1382,
+        "health_nutrition": 0.2606,
+        "value_price": 0.0714,
+        "convenience": 0.3115,
+        "comparison": 0.18,
+        "repurchase_intent": 0.066,
+        "use_case": 0.2031,
+        "quality_issues": 0.1
+      },
+      "xgb_buy_probability": 94.6
+    },
+    {
+      "audience_id": 39,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 24,
+        "gender": "Woman",
+        "household_income": "$30,000 - $39,999",
+        "race_ethnicity": "Black or African American",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "Infant (<1 year), Toddler (1-3 years), Preschooler (4-5 years), School aged (6-12 years)",
+        "living_situation": "Live with roommates",
+        "neighborhood_type": "Suburban",
+        "region": "New York",
+        "home_owner": "Yes",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Stress / calm",
+          "Energy"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.51,
+        "value_price": 0.22,
+        "taste_flavor": 0.38,
+        "comparison": 0.63,
+        "health_nutrition": 0.68,
+        "repurchase_intent": 0.33,
+        "quality_issues": 0.31,
+        "convenience": 0.82
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1382,
+        "health_nutrition": 0.2644,
+        "value_price": 0.0786,
+        "convenience": 0.3154,
+        "comparison": 0.21,
+        "repurchase_intent": 0.066,
+        "use_case": 0.1594,
+        "quality_issues": 0.0775
+      },
+      "xgb_buy_probability": 87.6
+    },
+    {
+      "audience_id": 40,
+      "segment": "Moms",
+      "demographics": {
+        "age": 34,
+        "gender": "Woman",
+        "household_income": "$150,000 - $199,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Infant (<1 year), Toddler (1-3 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Maryland",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Energy",
+          "Immunity",
+          "Stress / calm"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.8,
+        "value_price": 0.43,
+        "taste_flavor": 0.35,
+        "comparison": 0.68,
+        "health_nutrition": 0.76,
+        "repurchase_intent": 0.58,
+        "quality_issues": 0.31,
+        "convenience": 0.78
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1273,
+        "health_nutrition": 0.2956,
+        "value_price": 0.1536,
+        "convenience": 0.3,
+        "comparison": 0.2267,
+        "repurchase_intent": 0.116,
+        "use_case": 0.25,
+        "quality_issues": 0.0775
+      },
+      "xgb_buy_probability": 91.3
+    },
+    {
+      "audience_id": 41,
+      "segment": "Original",
+      "demographics": {
+        "age": 47,
+        "gender": "Man",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "No children",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "New Hampshire",
+        "home_owner": "No",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "General wellness",
+          "Energy"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.8,
+        "value_price": 0.39,
+        "taste_flavor": 0.39,
+        "comparison": 0.63,
+        "health_nutrition": 0.65,
+        "repurchase_intent": 0.47,
+        "quality_issues": 0.34,
+        "convenience": 0.6
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1418,
+        "health_nutrition": 0.2528,
+        "value_price": 0.1393,
+        "convenience": 0.2308,
+        "comparison": 0.21,
+        "repurchase_intent": 0.094,
+        "use_case": 0.25,
+        "quality_issues": 0.085
+      },
+      "xgb_buy_probability": 80.5
+    },
+    {
+      "audience_id": 42,
+      "segment": "Original",
+      "demographics": {
+        "age": 47,
+        "gender": "Man",
+        "household_income": "$60,000 - $79,999",
+        "race_ethnicity": "Asian",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "No children",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Suburban",
+        "region": "California",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "Immunity",
+          "General wellness"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.74,
+        "value_price": 0.39,
+        "taste_flavor": 0.46,
+        "comparison": 0.48,
+        "health_nutrition": 0.78,
+        "repurchase_intent": 0.55,
+        "quality_issues": 0.48,
+        "convenience": 0.72
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1673,
+        "health_nutrition": 0.3033,
+        "value_price": 0.1393,
+        "convenience": 0.2769,
+        "comparison": 0.16,
+        "repurchase_intent": 0.11,
+        "use_case": 0.2313,
+        "quality_issues": 0.12
+      },
+      "xgb_buy_probability": 85.7
+    },
+    {
+      "audience_id": 43,
+      "segment": "Moms",
+      "demographics": {
+        "age": 38,
+        "gender": "Woman",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Postgraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Infant (<1 year), Toddler (1-3 years), Preschooler (4-5 years)",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Suburban",
+        "region": "Pennsylvania",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Energy",
+          "Immunity",
+          "Stress / calm"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.52,
+        "value_price": 0.34,
+        "taste_flavor": 0.17,
+        "comparison": 0.36,
+        "health_nutrition": 0.75,
+        "repurchase_intent": 0.22,
+        "quality_issues": 0.6,
+        "convenience": 0.75
+      },
+      "predicted_buy_tendency": "weak",
+      "estimated_buy_range": "30-50%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.0618,
+        "health_nutrition": 0.2917,
+        "value_price": 0.1214,
+        "convenience": 0.2885,
+        "comparison": 0.12,
+        "repurchase_intent": 0.044,
+        "use_case": 0.1625,
+        "quality_issues": 0.15
+      },
+      "xgb_buy_probability": 43.2
+    },
+    {
+      "audience_id": 44,
+      "segment": "Original",
+      "demographics": {
+        "age": 34,
+        "gender": "Man",
+        "household_income": "$150,000 - $199,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "Preschooler (4-5 years), School aged (6-12 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Washington",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Energy"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.71,
+        "value_price": 0.47,
+        "taste_flavor": 0.39,
+        "comparison": 0.53,
+        "health_nutrition": 0.69,
+        "repurchase_intent": 0.35,
+        "quality_issues": 0.44,
+        "convenience": 0.79
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1418,
+        "health_nutrition": 0.2683,
+        "value_price": 0.1679,
+        "convenience": 0.3038,
+        "comparison": 0.1767,
+        "repurchase_intent": 0.07,
+        "use_case": 0.2219,
+        "quality_issues": 0.11
+      },
+      "xgb_buy_probability": 66.1
+    },
+    {
+      "audience_id": 45,
+      "segment": "Moms",
+      "demographics": {
+        "age": 35,
+        "gender": "Woman",
+        "household_income": "> $200,000",
+        "race_ethnicity": "Asian",
+        "education": "Postgraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Toddler (1-3 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "New York",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Immunity",
+          "Stress / calm",
+          "General wellness",
+          "Energy",
+          "Gut health"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.52,
+        "value_price": 0.26,
+        "taste_flavor": 0.28,
+        "comparison": 0.35,
+        "health_nutrition": 0.59,
+        "repurchase_intent": 0.17,
+        "quality_issues": 0.61,
+        "convenience": 0.87
+      },
+      "predicted_buy_tendency": "weak",
+      "estimated_buy_range": "30-50%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1018,
+        "health_nutrition": 0.2294,
+        "value_price": 0.0929,
+        "convenience": 0.3346,
+        "comparison": 0.1167,
+        "repurchase_intent": 0.034,
+        "use_case": 0.1625,
+        "quality_issues": 0.1525
+      },
+      "xgb_buy_probability": 80.8
+    },
+    {
+      "audience_id": 46,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 27,
+        "gender": "Woman",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "Black or African American",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Unemployed",
+        "children": "No children",
+        "living_situation": "Live with a significant other",
+        "neighborhood_type": "Suburban",
+        "region": "Georgia",
+        "home_owner": "No",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "Stress / calm",
+          "Energy"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.66,
+        "value_price": 0.48,
+        "taste_flavor": 0.45,
+        "comparison": 0.62,
+        "health_nutrition": 0.69,
+        "repurchase_intent": 0.37,
+        "quality_issues": 0.34,
+        "convenience": 0.9
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1636,
+        "health_nutrition": 0.2683,
+        "value_price": 0.1714,
+        "convenience": 0.3462,
+        "comparison": 0.2067,
+        "repurchase_intent": 0.074,
+        "use_case": 0.2063,
+        "quality_issues": 0.085
+      },
+      "xgb_buy_probability": 88.2
+    },
+    {
+      "audience_id": 47,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 24,
+        "gender": "Woman",
+        "household_income": "$60,000 - $79,999",
+        "race_ethnicity": "Middle Eastern ",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Unemployed",
+        "children": "No children",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Indiana",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Stress / calm",
+          "Energy",
+          "General wellness"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.83,
+        "value_price": 0.38,
+        "taste_flavor": 0.4,
+        "comparison": 0.62,
+        "health_nutrition": 0.66,
+        "repurchase_intent": 0.39,
+        "quality_issues": 0.35,
+        "convenience": 0.77
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1455,
+        "health_nutrition": 0.2567,
+        "value_price": 0.1357,
+        "convenience": 0.2962,
+        "comparison": 0.2067,
+        "repurchase_intent": 0.078,
+        "use_case": 0.2594,
+        "quality_issues": 0.0875
+      },
+      "xgb_buy_probability": 80.5
+    },
+    {
+      "audience_id": 48,
+      "segment": "Original",
+      "demographics": {
+        "age": 44,
+        "gender": "Man",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "Hispanic or Latino",
+        "education": "Postgraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Toddler (1-3 years), Preschooler (4-5 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Tennessee",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Stress / calm",
+          "Energy"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.83,
+        "value_price": 0.35,
+        "taste_flavor": 0.48,
+        "comparison": 0.76,
+        "health_nutrition": 0.79,
+        "repurchase_intent": 0.61,
+        "quality_issues": 0.5,
+        "convenience": 0.8
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1745,
+        "health_nutrition": 0.3072,
+        "value_price": 0.125,
+        "convenience": 0.3077,
+        "comparison": 0.2533,
+        "repurchase_intent": 0.122,
+        "use_case": 0.2594,
+        "quality_issues": 0.125
+      },
+      "xgb_buy_probability": 87.0
+    },
+    {
+      "audience_id": 49,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 24,
+        "gender": "Woman",
+        "household_income": "$30,000 - $39,999",
+        "race_ethnicity": "Black or African American",
+        "education": "Postgraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Part-time employed",
+        "children": "No children",
+        "living_situation": "Live with parents",
+        "neighborhood_type": "Urban",
+        "region": "Georgia",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.56,
+        "value_price": 0.17,
+        "taste_flavor": 0.36,
+        "comparison": 0.65,
+        "health_nutrition": 0.8,
+        "repurchase_intent": 0.36,
+        "quality_issues": 0.18,
+        "convenience": 0.85
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1309,
+        "health_nutrition": 0.3111,
+        "value_price": 0.0607,
+        "convenience": 0.3269,
+        "comparison": 0.2167,
+        "repurchase_intent": 0.072,
+        "use_case": 0.175,
+        "quality_issues": 0.045
+      },
+      "xgb_buy_probability": 98.2
+    },
+    {
+      "audience_id": 50,
+      "segment": "Original",
+      "demographics": {
+        "age": 47,
+        "gender": "Man",
+        "household_income": "$150,000 - $199,999",
+        "race_ethnicity": "White",
+        "education": "Postgraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Part-time employed, Homemaker",
+        "children": "Adult (18+ years)",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Suburban",
+        "region": "Arkansas",
+        "home_owner": "Yes",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Immunity",
+          "Gut health",
+          "Energy"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.79,
+        "value_price": 0.45,
+        "taste_flavor": 0.38,
+        "comparison": 0.49,
+        "health_nutrition": 0.68,
+        "repurchase_intent": 0.49,
+        "quality_issues": 0.46,
+        "convenience": 0.65
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1382,
+        "health_nutrition": 0.2644,
+        "value_price": 0.1607,
+        "convenience": 0.25,
+        "comparison": 0.1633,
+        "repurchase_intent": 0.098,
+        "use_case": 0.2469,
+        "quality_issues": 0.115
+      },
+      "xgb_buy_probability": 66.1
+    },
+    {
+      "audience_id": 51,
+      "segment": "Original",
+      "demographics": {
+        "age": 47,
+        "gender": "Man",
+        "household_income": "$150,000 - $199,999",
+        "race_ethnicity": "Asian",
+        "education": "Finished high school",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Adolescent (13-17 years)",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Suburban",
+        "region": "Minnesota",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Energy",
+          "Stress / calm"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.79,
+        "value_price": 0.47,
+        "taste_flavor": 0.36,
+        "comparison": 0.63,
+        "health_nutrition": 0.69,
+        "repurchase_intent": 0.48,
+        "quality_issues": 0.48,
+        "convenience": 0.89
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1309,
+        "health_nutrition": 0.2683,
+        "value_price": 0.1679,
+        "convenience": 0.3423,
+        "comparison": 0.21,
+        "repurchase_intent": 0.096,
+        "use_case": 0.2469,
+        "quality_issues": 0.12
+      },
+      "xgb_buy_probability": 95.3
+    },
+    {
+      "audience_id": 52,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 22,
+        "gender": "Man",
+        "household_income": "$60,000 - $79,999",
+        "race_ethnicity": "Black or African American",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "No children",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Urban",
+        "region": "New York",
+        "home_owner": "No",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Stress / calm",
+          "Energy",
+          "General wellness"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.83,
+        "value_price": 0.32,
+        "taste_flavor": 0.42,
+        "comparison": 0.77,
+        "health_nutrition": 0.77,
+        "repurchase_intent": 0.35,
+        "quality_issues": 0.44,
+        "convenience": 0.83
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1527,
+        "health_nutrition": 0.2994,
+        "value_price": 0.1143,
+        "convenience": 0.3192,
+        "comparison": 0.2567,
+        "repurchase_intent": 0.07,
+        "use_case": 0.2594,
+        "quality_issues": 0.11
+      },
+      "xgb_buy_probability": 97.1
+    },
+    {
+      "audience_id": 53,
+      "segment": "Original",
+      "demographics": {
+        "age": 34,
+        "gender": "Man",
+        "household_income": "$150,000 - $199,999",
+        "race_ethnicity": "Hispanic or Latino",
+        "education": "Some college",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "School aged (6-12 years), Adult (18+ years)",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Urban",
+        "region": "California",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Energy",
+          "Stress / calm"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.67,
+        "value_price": 0.25,
+        "taste_flavor": 0.31,
+        "comparison": 0.28,
+        "health_nutrition": 0.7,
+        "repurchase_intent": 0.21,
+        "quality_issues": 0.59,
+        "convenience": 0.87
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1127,
+        "health_nutrition": 0.2722,
+        "value_price": 0.0893,
+        "convenience": 0.3346,
+        "comparison": 0.0933,
+        "repurchase_intent": 0.042,
+        "use_case": 0.2094,
+        "quality_issues": 0.1475
+      },
+      "xgb_buy_probability": 87.0
+    },
+    {
+      "audience_id": 54,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 31,
+        "gender": "Woman",
+        "household_income": "$40,000 - $59,999",
+        "race_ethnicity": "White",
+        "education": "Some college",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Part-time employed",
+        "children": "No children",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Urban",
+        "region": "Illinois",
+        "home_owner": "No",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.69,
+        "value_price": 0.18,
+        "taste_flavor": 0.44,
+        "comparison": 0.64,
+        "health_nutrition": 0.47,
+        "repurchase_intent": 0.44,
+        "quality_issues": 0.44,
+        "convenience": 0.61
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.16,
+        "health_nutrition": 0.1828,
+        "value_price": 0.0643,
+        "convenience": 0.2346,
+        "comparison": 0.2133,
+        "repurchase_intent": 0.088,
+        "use_case": 0.2156,
+        "quality_issues": 0.11
+      },
+      "xgb_buy_probability": 95.7
+    },
+    {
+      "audience_id": 55,
+      "segment": "Original",
+      "demographics": {
+        "age": 43,
+        "gender": "Man",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Postgraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "Infant (<1 year), School aged (6-12 years), Adolescent (13-17 years)",
+        "living_situation": "None of the above",
+        "neighborhood_type": "Rural",
+        "region": "Wisconsin",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.7,
+        "value_price": 0.41,
+        "taste_flavor": 0.42,
+        "comparison": 0.8,
+        "health_nutrition": 0.75,
+        "repurchase_intent": 0.54,
+        "quality_issues": 0.35,
+        "convenience": 0.9
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1527,
+        "health_nutrition": 0.2917,
+        "value_price": 0.1464,
+        "convenience": 0.3462,
+        "comparison": 0.2667,
+        "repurchase_intent": 0.108,
+        "use_case": 0.2188,
+        "quality_issues": 0.0875
+      },
+      "xgb_buy_probability": 94.5
+    },
+    {
+      "audience_id": 56,
+      "segment": "Moms",
+      "demographics": {
+        "age": 35,
+        "gender": "Woman",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "Black or African American",
+        "education": "Postgraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Infant (<1 year), Toddler (1-3 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Michigan",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Immunity",
+          "Stress / calm"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Discount/value stores (Costco, Aldi)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.3,
+        "value_price": 0.35,
+        "taste_flavor": 0.2,
+        "comparison": 0.3,
+        "health_nutrition": 0.8,
+        "repurchase_intent": 0.16,
+        "quality_issues": 0.77,
+        "convenience": 0.78
+      },
+      "predicted_buy_tendency": "weak",
+      "estimated_buy_range": "30-50%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.0727,
+        "health_nutrition": 0.3111,
+        "value_price": 0.125,
+        "convenience": 0.3,
+        "comparison": 0.1,
+        "repurchase_intent": 0.032,
+        "use_case": 0.0938,
+        "quality_issues": 0.1925
+      },
+      "xgb_buy_probability": 22.9
+    },
+    {
+      "audience_id": 57,
+      "segment": "Original",
+      "demographics": {
+        "age": 40,
+        "gender": "Woman",
+        "household_income": "$80,000 - $99,999",
+        "race_ethnicity": "White",
+        "education": "Some college",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Part-time employed, Homemaker",
+        "children": "No children",
+        "living_situation": "Live with a significant other",
+        "neighborhood_type": "Urban",
+        "region": "Michigan",
+        "home_owner": "No",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "Energy",
+          "General wellness",
+          "Immunity"
+        ],
+        "snack_approach": "I choose based on flavor",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.72,
+        "value_price": 0.25,
+        "taste_flavor": 0.63,
+        "comparison": 0.57,
+        "health_nutrition": 0.77,
+        "repurchase_intent": 0.55,
+        "quality_issues": 0.32,
+        "convenience": 0.62
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.2291,
+        "health_nutrition": 0.2994,
+        "value_price": 0.0893,
+        "convenience": 0.2385,
+        "comparison": 0.19,
+        "repurchase_intent": 0.11,
+        "use_case": 0.225,
+        "quality_issues": 0.08
+      },
+      "xgb_buy_probability": 94.1
+    },
+    {
+      "audience_id": 58,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 19,
+        "gender": "Woman",
+        "household_income": "$40,000 - $59,999",
+        "race_ethnicity": "Black or African American",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "Infant (<1 year), Toddler (1-3 years)",
+        "living_situation": "Live with parents",
+        "neighborhood_type": "Suburban",
+        "region": "New York",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Immunity",
+          "Gut health",
+          "Energy"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.79,
+        "value_price": 0.18,
+        "taste_flavor": 0.45,
+        "comparison": 0.62,
+        "health_nutrition": 0.77,
+        "repurchase_intent": 0.31,
+        "quality_issues": 0.4,
+        "convenience": 0.77
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1636,
+        "health_nutrition": 0.2994,
+        "value_price": 0.0643,
+        "convenience": 0.2962,
+        "comparison": 0.2067,
+        "repurchase_intent": 0.062,
+        "use_case": 0.2469,
+        "quality_issues": 0.1
+      },
+      "xgb_buy_probability": 94.6
+    },
+    {
+      "audience_id": 59,
+      "segment": "Original",
+      "demographics": {
+        "age": 44,
+        "gender": "Man",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "No children",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Texas",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.76,
+        "value_price": 0.38,
+        "taste_flavor": 0.44,
+        "comparison": 0.79,
+        "health_nutrition": 0.77,
+        "repurchase_intent": 0.49,
+        "quality_issues": 0.13,
+        "convenience": 0.77
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.16,
+        "health_nutrition": 0.2994,
+        "value_price": 0.1357,
+        "convenience": 0.2962,
+        "comparison": 0.2633,
+        "repurchase_intent": 0.098,
+        "use_case": 0.2375,
+        "quality_issues": 0.0325
+      },
+      "xgb_buy_probability": 91.1
+    },
+    {
+      "audience_id": 60,
+      "segment": "Moms",
+      "demographics": {
+        "age": 35,
+        "gender": "Woman",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "Asian",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Homemaker",
+        "children": "Infant (<1 year), Toddler (1-3 years), School aged (6-12 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Urban",
+        "region": "Arizona",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Energy",
+          "Stress / calm"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.61,
+        "value_price": 0.37,
+        "taste_flavor": 0.21,
+        "comparison": 0.38,
+        "health_nutrition": 0.73,
+        "repurchase_intent": 0.21,
+        "quality_issues": 0.57,
+        "convenience": 0.76
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.0764,
+        "health_nutrition": 0.2839,
+        "value_price": 0.1321,
+        "convenience": 0.2923,
+        "comparison": 0.1267,
+        "repurchase_intent": 0.042,
+        "use_case": 0.1906,
+        "quality_issues": 0.1425
+      },
+      "xgb_buy_probability": 56.4
+    },
+    {
+      "audience_id": 61,
+      "segment": "Original",
+      "demographics": {
+        "age": 46,
+        "gender": "Woman",
+        "household_income": "$150,000 - $199,999",
+        "race_ethnicity": "White",
+        "education": "Finished high school",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Toddler (1-3 years), Preschooler (4-5 years)",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Suburban",
+        "region": "Georgia",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Energy",
+          "Stress / calm"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.69,
+        "value_price": 0.35,
+        "taste_flavor": 0.15,
+        "comparison": 0.39,
+        "health_nutrition": 0.66,
+        "repurchase_intent": 0.1,
+        "quality_issues": 0.35,
+        "convenience": 0.82
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.0545,
+        "health_nutrition": 0.2567,
+        "value_price": 0.125,
+        "convenience": 0.3154,
+        "comparison": 0.13,
+        "repurchase_intent": 0.02,
+        "use_case": 0.2156,
+        "quality_issues": 0.0875
+      },
+      "xgb_buy_probability": 94.0
+    },
+    {
+      "audience_id": 62,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 23,
+        "gender": "Woman",
+        "household_income": "$60,000 - $79,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed, Part-time student",
+        "children": "No children",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Urban",
+        "region": "Florida",
+        "home_owner": "No",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Immunity",
+          "Gut health"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.43,
+        "value_price": 0.19,
+        "taste_flavor": 0.17,
+        "comparison": 0.37,
+        "health_nutrition": 0.63,
+        "repurchase_intent": 0.13,
+        "quality_issues": 0.71,
+        "convenience": 0.84
+      },
+      "predicted_buy_tendency": "weak",
+      "estimated_buy_range": "30-50%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.0618,
+        "health_nutrition": 0.245,
+        "value_price": 0.0679,
+        "convenience": 0.3231,
+        "comparison": 0.1233,
+        "repurchase_intent": 0.026,
+        "use_case": 0.1344,
+        "quality_issues": 0.1775
+      },
+      "xgb_buy_probability": 80.9
+    },
+    {
+      "audience_id": 63,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 24,
+        "gender": "Woman",
+        "household_income": "$60,000 - $79,999",
+        "race_ethnicity": "Middle Eastern ",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Part-time employed, Part-time student",
+        "children": "No children",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Urban",
+        "region": "Georgia",
+        "home_owner": "Yes",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Stress / calm"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.57,
+        "value_price": 0.34,
+        "taste_flavor": 0.37,
+        "comparison": 0.53,
+        "health_nutrition": 0.8,
+        "repurchase_intent": 0.34,
+        "quality_issues": 0.43,
+        "convenience": 0.8
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1345,
+        "health_nutrition": 0.3111,
+        "value_price": 0.1214,
+        "convenience": 0.3077,
+        "comparison": 0.1767,
+        "repurchase_intent": 0.068,
+        "use_case": 0.1781,
+        "quality_issues": 0.1075
+      },
+      "xgb_buy_probability": 93.8
+    },
+    {
+      "audience_id": 64,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 24,
+        "gender": "Woman",
+        "household_income": "> $200,000",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "No children",
+        "living_situation": "Live with parents",
+        "neighborhood_type": "Urban",
+        "region": "Florida",
+        "home_owner": "No",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "Stress / calm",
+          "Energy",
+          "Immunity",
+          "General wellness"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.73,
+        "value_price": 0.38,
+        "taste_flavor": 0.36,
+        "comparison": 0.6,
+        "health_nutrition": 0.75,
+        "repurchase_intent": 0.37,
+        "quality_issues": 0.47,
+        "convenience": 0.87
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1309,
+        "health_nutrition": 0.2917,
+        "value_price": 0.1357,
+        "convenience": 0.3346,
+        "comparison": 0.2,
+        "repurchase_intent": 0.074,
+        "use_case": 0.2281,
+        "quality_issues": 0.1175
+      },
+      "xgb_buy_probability": 97.5
+    },
+    {
+      "audience_id": 65,
+      "segment": "Moms",
+      "demographics": {
+        "age": 35,
+        "gender": "Man",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Toddler (1-3 years), Preschooler (4-5 years), School aged (6-12 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "New York",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Stress / calm",
+          "Immunity"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Discount/value stores (Costco, Aldi)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.71,
+        "value_price": 0.38,
+        "taste_flavor": 0.5,
+        "comparison": 0.64,
+        "health_nutrition": 0.65,
+        "repurchase_intent": 0.64,
+        "quality_issues": 0.43,
+        "convenience": 0.88
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1818,
+        "health_nutrition": 0.2528,
+        "value_price": 0.1357,
+        "convenience": 0.3385,
+        "comparison": 0.2133,
+        "repurchase_intent": 0.128,
+        "use_case": 0.2219,
+        "quality_issues": 0.1075
+      },
+      "xgb_buy_probability": 92.2
+    },
+    {
+      "audience_id": 66,
+      "segment": "Moms",
+      "demographics": {
+        "age": 34,
+        "gender": "Woman",
+        "household_income": "$80,000 - $99,999",
+        "race_ethnicity": "Hispanic or Latino",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Toddler (1-3 years), Preschooler (4-5 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Utah",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Stress / calm",
+          "Immunity",
+          "Energy"
+        ],
+        "snack_approach": "I look for convenience",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.83,
+        "value_price": 0.28,
+        "taste_flavor": 0.45,
+        "comparison": 0.62,
+        "health_nutrition": 0.79,
+        "repurchase_intent": 0.4,
+        "quality_issues": 0.4,
+        "convenience": 0.84
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1636,
+        "health_nutrition": 0.3072,
+        "value_price": 0.1,
+        "convenience": 0.3231,
+        "comparison": 0.2067,
+        "repurchase_intent": 0.08,
+        "use_case": 0.2594,
+        "quality_issues": 0.1
+      },
+      "xgb_buy_probability": 96.2
+    },
+    {
+      "audience_id": 67,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 28,
+        "gender": "Woman",
+        "household_income": "$40,000 - $59,999",
+        "race_ethnicity": "Indian & South African ",
+        "education": "Some college",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "No children",
+        "living_situation": "Live with parents",
+        "neighborhood_type": "Urban",
+        "region": "New York",
+        "home_owner": "No",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Gut health",
+          "Energy",
+          "Immunity"
+        ],
+        "snack_approach": "I look for good value",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.85,
+        "value_price": 0.19,
+        "taste_flavor": 0.48,
+        "comparison": 0.81,
+        "health_nutrition": 0.74,
+        "repurchase_intent": 0.6,
+        "quality_issues": 0.28,
+        "convenience": 0.81
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1745,
+        "health_nutrition": 0.2878,
+        "value_price": 0.0679,
+        "convenience": 0.3115,
+        "comparison": 0.27,
+        "repurchase_intent": 0.12,
+        "use_case": 0.2656,
+        "quality_issues": 0.07
+      },
+      "xgb_buy_probability": 98.6
+    },
+    {
+      "audience_id": 68,
+      "segment": "Original",
+      "demographics": {
+        "age": 48,
+        "gender": "Man",
+        "household_income": "$150,000 - $199,999",
+        "race_ethnicity": "Black or African American",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Part-time employed",
+        "children": "No children",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Suburban",
+        "region": "New York",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Energy"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Online (Amazon, Instacart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.76,
+        "value_price": 0.44,
+        "taste_flavor": 0.39,
+        "comparison": 0.52,
+        "health_nutrition": 0.68,
+        "repurchase_intent": 0.46,
+        "quality_issues": 0.42,
+        "convenience": 0.7
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1418,
+        "health_nutrition": 0.2644,
+        "value_price": 0.1571,
+        "convenience": 0.2692,
+        "comparison": 0.1733,
+        "repurchase_intent": 0.092,
+        "use_case": 0.2375,
+        "quality_issues": 0.105
+      },
+      "xgb_buy_probability": 66.1
+    },
+    {
+      "audience_id": 69,
+      "segment": "Moms",
+      "demographics": {
+        "age": 37,
+        "gender": "Woman",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "Black or African American",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Toddler (1-3 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Washington",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Immunity",
+          "General wellness",
+          "Stress / calm"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.4,
+        "value_price": 0.36,
+        "taste_flavor": 0.34,
+        "comparison": 0.25,
+        "health_nutrition": 0.68,
+        "repurchase_intent": 0.1,
+        "quality_issues": 0.71,
+        "convenience": 0.88
+      },
+      "predicted_buy_tendency": "weak",
+      "estimated_buy_range": "30-50%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1236,
+        "health_nutrition": 0.2644,
+        "value_price": 0.1286,
+        "convenience": 0.3385,
+        "comparison": 0.0833,
+        "repurchase_intent": 0.02,
+        "use_case": 0.125,
+        "quality_issues": 0.1775
+      },
+      "xgb_buy_probability": 72.8
+    },
+    {
+      "audience_id": 70,
+      "segment": "Original",
+      "demographics": {
+        "age": 29,
+        "gender": "Man",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "Asian",
+        "education": "Postgraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "No children",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "North Carolina",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Energy",
+          "Stress / calm"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.64,
+        "value_price": 0.4,
+        "taste_flavor": 0.41,
+        "comparison": 0.47,
+        "health_nutrition": 0.68,
+        "repurchase_intent": 0.4,
+        "quality_issues": 0.34,
+        "convenience": 0.83
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1491,
+        "health_nutrition": 0.2644,
+        "value_price": 0.1429,
+        "convenience": 0.3192,
+        "comparison": 0.1567,
+        "repurchase_intent": 0.08,
+        "use_case": 0.2,
+        "quality_issues": 0.085
+      },
+      "xgb_buy_probability": 88.2
+    },
+    {
+      "audience_id": 71,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 24,
+        "gender": "Woman",
+        "household_income": "$30,000 - $39,999",
+        "race_ethnicity": "White",
+        "education": "Finished high school",
+        "marital_status": "Never married",
+        "employment_status": "Part-time employed, Full-time student",
+        "children": "No children",
+        "living_situation": "Live with roommates",
+        "neighborhood_type": "Urban",
+        "region": "South Carolina",
+        "home_owner": "No",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Gut health",
+          "Energy",
+          "Immunity"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Discount/value stores (Costco, Aldi)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.55,
+        "value_price": 0.17,
+        "taste_flavor": 0.25,
+        "comparison": 0.33,
+        "health_nutrition": 0.78,
+        "repurchase_intent": 0.24,
+        "quality_issues": 0.64,
+        "convenience": 0.79
+      },
+      "predicted_buy_tendency": "weak",
+      "estimated_buy_range": "30-50%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.0909,
+        "health_nutrition": 0.3033,
+        "value_price": 0.0607,
+        "convenience": 0.3038,
+        "comparison": 0.11,
+        "repurchase_intent": 0.048,
+        "use_case": 0.1719,
+        "quality_issues": 0.16
+      },
+      "xgb_buy_probability": 57.0
+    },
+    {
+      "audience_id": 72,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 27,
+        "gender": "Woman",
+        "household_income": "$80,000 - $99,999",
+        "race_ethnicity": "White",
+        "education": "Some college",
+        "marital_status": "Never married",
+        "employment_status": "Full-time student",
+        "children": "No children",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Minnesota",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "Stress / calm",
+          "Energy",
+          "Immunity",
+          "General wellness"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Discount/value stores (Costco, Aldi)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.7,
+        "value_price": 0.35,
+        "taste_flavor": 0.44,
+        "comparison": 0.76,
+        "health_nutrition": 0.68,
+        "repurchase_intent": 0.53,
+        "quality_issues": 0.42,
+        "convenience": 0.82
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.16,
+        "health_nutrition": 0.2644,
+        "value_price": 0.125,
+        "convenience": 0.3154,
+        "comparison": 0.2533,
+        "repurchase_intent": 0.106,
+        "use_case": 0.2188,
+        "quality_issues": 0.105
+      },
+      "xgb_buy_probability": 93.8
+    },
+    {
+      "audience_id": 73,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 26,
+        "gender": "Woman",
+        "household_income": "$60,000 - $79,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Part-time employed",
+        "children": "Toddler (1-3 years), Pregnant",
+        "living_situation": "Live with roommates",
+        "neighborhood_type": "Suburban",
+        "region": "Minnesota",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "Stress / calm",
+          "General wellness"
+        ],
+        "snack_approach": "I look for good value",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.71,
+        "value_price": 0.38,
+        "taste_flavor": 0.38,
+        "comparison": 0.71,
+        "health_nutrition": 0.68,
+        "repurchase_intent": 0.52,
+        "quality_issues": 0.31,
+        "convenience": 0.83
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1382,
+        "health_nutrition": 0.2644,
+        "value_price": 0.1357,
+        "convenience": 0.3192,
+        "comparison": 0.2367,
+        "repurchase_intent": 0.104,
+        "use_case": 0.2219,
+        "quality_issues": 0.0775
+      },
+      "xgb_buy_probability": 93.8
+    },
+    {
+      "audience_id": 74,
+      "segment": "Original",
+      "demographics": {
+        "age": 38,
+        "gender": "Man",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Some college",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "No children",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Urban",
+        "region": "Arkansas",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Energy",
+          "Stress / calm",
+          "Gut health"
+        ],
+        "snack_approach": "I look for good value",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.77,
+        "value_price": 0.36,
+        "taste_flavor": 0.43,
+        "comparison": 0.64,
+        "health_nutrition": 0.68,
+        "repurchase_intent": 0.59,
+        "quality_issues": 0.34,
+        "convenience": 0.68
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1564,
+        "health_nutrition": 0.2644,
+        "value_price": 0.1286,
+        "convenience": 0.2615,
+        "comparison": 0.2133,
+        "repurchase_intent": 0.118,
+        "use_case": 0.2406,
+        "quality_issues": 0.085
+      },
+      "xgb_buy_probability": 75.8
+    },
+    {
+      "audience_id": 75,
+      "segment": "Original",
+      "demographics": {
+        "age": 33,
+        "gender": "Woman",
+        "household_income": "$80,000 - $99,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Homemaker",
+        "children": "No children",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Arkansas",
+        "home_owner": "No",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Discount/value stores (Costco, Aldi)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.33,
+        "value_price": 0.21,
+        "taste_flavor": 0.12,
+        "comparison": 0.4,
+        "health_nutrition": 0.48,
+        "repurchase_intent": 0.22,
+        "quality_issues": 0.75,
+        "convenience": 0.71
+      },
+      "predicted_buy_tendency": "weak",
+      "estimated_buy_range": "30-50%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.0436,
+        "health_nutrition": 0.1867,
+        "value_price": 0.075,
+        "convenience": 0.2731,
+        "comparison": 0.1333,
+        "repurchase_intent": 0.044,
+        "use_case": 0.1031,
+        "quality_issues": 0.1875
+      },
+      "xgb_buy_probability": 32.9
+    },
+    {
+      "audience_id": 76,
+      "segment": "Original",
+      "demographics": {
+        "age": 26,
+        "gender": "Woman",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Postgraduate degree",
+        "marital_status": "Divorced or separated",
+        "employment_status": "Full-time employed",
+        "children": "No children",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "California",
+        "home_owner": "Yes",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Energy",
+          "General wellness",
+          "Stress / calm",
+          "Gut health"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.7,
+        "value_price": 0.52,
+        "taste_flavor": 0.38,
+        "comparison": 0.64,
+        "health_nutrition": 0.67,
+        "repurchase_intent": 0.42,
+        "quality_issues": 0.38,
+        "convenience": 0.88
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1382,
+        "health_nutrition": 0.2606,
+        "value_price": 0.1857,
+        "convenience": 0.3385,
+        "comparison": 0.2133,
+        "repurchase_intent": 0.084,
+        "use_case": 0.2188,
+        "quality_issues": 0.095
+      },
+      "xgb_buy_probability": 88.2
+    },
+    {
+      "audience_id": 77,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 28,
+        "gender": "Man",
+        "household_income": "$80,000 - $99,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "No children",
+        "living_situation": "Live with parents",
+        "neighborhood_type": "Rural",
+        "region": "Ohio",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Stress / calm",
+          "Energy",
+          "General wellness"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.68,
+        "value_price": 0.2,
+        "taste_flavor": 0.25,
+        "comparison": 0.4,
+        "health_nutrition": 0.48,
+        "repurchase_intent": 0.18,
+        "quality_issues": 0.65,
+        "convenience": 0.77
+      },
+      "predicted_buy_tendency": "weak",
+      "estimated_buy_range": "30-50%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.0909,
+        "health_nutrition": 0.1867,
+        "value_price": 0.0714,
+        "convenience": 0.2962,
+        "comparison": 0.1333,
+        "repurchase_intent": 0.036,
+        "use_case": 0.2125,
+        "quality_issues": 0.1625
+      },
+      "xgb_buy_probability": 61.3
+    },
+    {
+      "audience_id": 78,
+      "segment": "Moms",
+      "demographics": {
+        "age": 30,
+        "gender": "Woman",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Finished high school",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Homemaker, Full-time student",
+        "children": "Toddler (1-3 years), School aged (6-12 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "New Jersey",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "Immunity",
+          "General wellness",
+          "Energy"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Discount/value stores (Costco, Aldi)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.79,
+        "value_price": 0.48,
+        "taste_flavor": 0.37,
+        "comparison": 0.66,
+        "health_nutrition": 0.77,
+        "repurchase_intent": 0.54,
+        "quality_issues": 0.31,
+        "convenience": 0.9
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1345,
+        "health_nutrition": 0.2994,
+        "value_price": 0.1714,
+        "convenience": 0.3462,
+        "comparison": 0.22,
+        "repurchase_intent": 0.108,
+        "use_case": 0.2469,
+        "quality_issues": 0.0775
+      },
+      "xgb_buy_probability": 96.0
+    },
+    {
+      "audience_id": 79,
+      "segment": "Original",
+      "demographics": {
+        "age": 37,
+        "gender": "Man",
+        "household_income": "> $200,000",
+        "race_ethnicity": "White",
+        "education": "Postgraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "No children",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Suburban",
+        "region": "Washington",
+        "home_owner": "No",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Stress / calm",
+          "General wellness"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.75,
+        "value_price": 0.47,
+        "taste_flavor": 0.43,
+        "comparison": 0.54,
+        "health_nutrition": 0.67,
+        "repurchase_intent": 0.63,
+        "quality_issues": 0.39,
+        "convenience": 0.63
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1564,
+        "health_nutrition": 0.2606,
+        "value_price": 0.1679,
+        "convenience": 0.2423,
+        "comparison": 0.18,
+        "repurchase_intent": 0.126,
+        "use_case": 0.2344,
+        "quality_issues": 0.0975
+      },
+      "xgb_buy_probability": 66.1
+    },
+    {
+      "audience_id": 80,
+      "segment": "Moms",
+      "demographics": {
+        "age": 38,
+        "gender": "Woman",
+        "household_income": "$150,000 - $199,999",
+        "race_ethnicity": "Hispanic or Latino",
+        "education": "Postgraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Toddler (1-3 years), School aged (6-12 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Idaho",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health"
+        ],
+        "snack_approach": "I look for good value",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.7,
+        "value_price": 0.4,
+        "taste_flavor": 0.5,
+        "comparison": 0.81,
+        "health_nutrition": 0.79,
+        "repurchase_intent": 0.55,
+        "quality_issues": 0.32,
+        "convenience": 0.83
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1818,
+        "health_nutrition": 0.3072,
+        "value_price": 0.1429,
+        "convenience": 0.3192,
+        "comparison": 0.27,
+        "repurchase_intent": 0.11,
+        "use_case": 0.2188,
+        "quality_issues": 0.08
+      },
+      "xgb_buy_probability": 94.5
+    },
+    {
+      "audience_id": 81,
+      "segment": "Moms",
+      "demographics": {
+        "age": 32,
+        "gender": "Man",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Homemaker",
+        "children": "Toddler (1-3 years), School aged (6-12 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "New York",
+        "home_owner": "Yes",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Stress / calm",
+          "General wellness",
+          "Gut health",
+          "Immunity",
+          "Energy"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.66,
+        "value_price": 0.3,
+        "taste_flavor": 0.27,
+        "comparison": 0.34,
+        "health_nutrition": 0.69,
+        "repurchase_intent": 0.23,
+        "quality_issues": 0.56,
+        "convenience": 0.89
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.0982,
+        "health_nutrition": 0.2683,
+        "value_price": 0.1071,
+        "convenience": 0.3423,
+        "comparison": 0.1133,
+        "repurchase_intent": 0.046,
+        "use_case": 0.2063,
+        "quality_issues": 0.14
+      },
+      "xgb_buy_probability": 91.2
+    },
+    {
+      "audience_id": 82,
+      "segment": "Moms",
+      "demographics": {
+        "age": 40,
+        "gender": "Woman",
+        "household_income": "> $200,000",
+        "race_ethnicity": "Asian",
+        "education": "Postgraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Toddler (1-3 years), School aged (6-12 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Virginia",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Stress / calm",
+          "General wellness",
+          "Energy"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Discount/value stores (Costco, Aldi)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.81,
+        "value_price": 0.36,
+        "taste_flavor": 0.36,
+        "comparison": 0.65,
+        "health_nutrition": 0.79,
+        "repurchase_intent": 0.6,
+        "quality_issues": 0.37,
+        "convenience": 0.79
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1309,
+        "health_nutrition": 0.3072,
+        "value_price": 0.1286,
+        "convenience": 0.3038,
+        "comparison": 0.2167,
+        "repurchase_intent": 0.12,
+        "use_case": 0.2531,
+        "quality_issues": 0.0925
+      },
+      "xgb_buy_probability": 93.4
+    },
+    {
+      "audience_id": 83,
+      "segment": "Moms",
+      "demographics": {
+        "age": 39,
+        "gender": "Woman",
+        "household_income": "> $200,000",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Homemaker",
+        "children": "Toddler (1-3 years), Preschooler (4-5 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Texas",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Stress / calm",
+          "Gut health",
+          "Energy",
+          "Immunity"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.62,
+        "value_price": 0.31,
+        "taste_flavor": 0.15,
+        "comparison": 0.27,
+        "health_nutrition": 0.57,
+        "repurchase_intent": 0.22,
+        "quality_issues": 0.71,
+        "convenience": 0.83
+      },
+      "predicted_buy_tendency": "weak",
+      "estimated_buy_range": "30-50%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.0545,
+        "health_nutrition": 0.2217,
+        "value_price": 0.1107,
+        "convenience": 0.3192,
+        "comparison": 0.09,
+        "repurchase_intent": 0.044,
+        "use_case": 0.1938,
+        "quality_issues": 0.1775
+      },
+      "xgb_buy_probability": 79.3
+    },
+    {
+      "audience_id": 84,
+      "segment": "Original",
+      "demographics": {
+        "age": 30,
+        "gender": "Man",
+        "household_income": "$150,000 - $199,999",
+        "race_ethnicity": "White",
+        "education": "Finished high school",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Adolescent (13-17 years)",
+        "living_situation": "Live with a significant other",
+        "neighborhood_type": "Urban",
+        "region": "Texas",
+        "home_owner": "Yes",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Stress / calm",
+          "Energy",
+          "Immunity"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.76,
+        "value_price": 0.44,
+        "taste_flavor": 0.42,
+        "comparison": 0.77,
+        "health_nutrition": 0.79,
+        "repurchase_intent": 0.5,
+        "quality_issues": 0.32,
+        "convenience": 0.78
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1527,
+        "health_nutrition": 0.3072,
+        "value_price": 0.1571,
+        "convenience": 0.3,
+        "comparison": 0.2567,
+        "repurchase_intent": 0.1,
+        "use_case": 0.2375,
+        "quality_issues": 0.08
+      },
+      "xgb_buy_probability": 82.9
+    },
+    {
+      "audience_id": 85,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 20,
+        "gender": "Woman",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "Asian",
+        "education": "Postgraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Unemployed",
+        "children": "No children",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Suburban",
+        "region": "Alabama",
+        "home_owner": "No",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.54,
+        "value_price": 0.46,
+        "taste_flavor": 0.5,
+        "comparison": 0.64,
+        "health_nutrition": 0.46,
+        "repurchase_intent": 0.12,
+        "quality_issues": 0.33,
+        "convenience": 0.86
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1818,
+        "health_nutrition": 0.1789,
+        "value_price": 0.1643,
+        "convenience": 0.3308,
+        "comparison": 0.2133,
+        "repurchase_intent": 0.024,
+        "use_case": 0.1688,
+        "quality_issues": 0.0825
+      },
+      "xgb_buy_probability": 90.3
+    },
+    {
+      "audience_id": 86,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 26,
+        "gender": "Woman",
+        "household_income": "$30,000 - $39,999",
+        "race_ethnicity": "Asian",
+        "education": "Some college",
+        "marital_status": "Never married",
+        "employment_status": "Full-time student",
+        "children": "No children",
+        "living_situation": "Live with parents",
+        "neighborhood_type": "Urban",
+        "region": "Washington",
+        "home_owner": "Yes",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Immunity",
+          "Gut health",
+          "Energy"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Discount/value stores (Costco, Aldi)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.53,
+        "value_price": 0.2,
+        "taste_flavor": 0.1,
+        "comparison": 0.3,
+        "health_nutrition": 0.76,
+        "repurchase_intent": 0.25,
+        "quality_issues": 0.57,
+        "convenience": 0.81
+      },
+      "predicted_buy_tendency": "weak",
+      "estimated_buy_range": "30-50%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.0364,
+        "health_nutrition": 0.2956,
+        "value_price": 0.0714,
+        "convenience": 0.3115,
+        "comparison": 0.1,
+        "repurchase_intent": 0.05,
+        "use_case": 0.1656,
+        "quality_issues": 0.1425
+      },
+      "xgb_buy_probability": 80.8
+    },
+    {
+      "audience_id": 87,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 19,
+        "gender": "Woman",
+        "household_income": "$30,000 - $39,999",
+        "race_ethnicity": "Hispanic or Latino",
+        "education": "Some college",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "Infant (<1 year), Toddler (1-3 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "New Jersey",
+        "home_owner": "No",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Gut health",
+          "Energy",
+          "Immunity"
+        ],
+        "snack_approach": "I look for good value",
+        "shopping_location": "Discount/value stores (Costco, Aldi)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.84,
+        "value_price": 0.19,
+        "taste_flavor": 0.4,
+        "comparison": 0.68,
+        "health_nutrition": 0.7,
+        "repurchase_intent": 0.43,
+        "quality_issues": 0.5,
+        "convenience": 0.81
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1455,
+        "health_nutrition": 0.2722,
+        "value_price": 0.0679,
+        "convenience": 0.3115,
+        "comparison": 0.2267,
+        "repurchase_intent": 0.086,
+        "use_case": 0.2625,
+        "quality_issues": 0.125
+      },
+      "xgb_buy_probability": 91.8
+    },
+    {
+      "audience_id": 88,
+      "segment": "Moms",
+      "demographics": {
+        "age": 40,
+        "gender": "Woman",
+        "household_income": "$60,000 - $79,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Homemaker",
+        "children": "Toddler (1-3 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Minnesota",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Immunity",
+          "General wellness"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Local/specialty stores"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.8,
+        "value_price": 0.26,
+        "taste_flavor": 0.44,
+        "comparison": 0.56,
+        "health_nutrition": 0.73,
+        "repurchase_intent": 0.57,
+        "quality_issues": 0.44,
+        "convenience": 0.87
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.16,
+        "health_nutrition": 0.2839,
+        "value_price": 0.0929,
+        "convenience": 0.3346,
+        "comparison": 0.1867,
+        "repurchase_intent": 0.114,
+        "use_case": 0.25,
+        "quality_issues": 0.11
+      },
+      "xgb_buy_probability": 96.2
+    },
+    {
+      "audience_id": 89,
+      "segment": "Original",
+      "demographics": {
+        "age": 54,
+        "gender": "Man",
+        "household_income": "$60,000 - $79,999",
+        "race_ethnicity": "White",
+        "education": "Postgraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Adolescent (13-17 years)",
+        "living_situation": "Live with a significant other",
+        "neighborhood_type": "Suburban",
+        "region": "Pennsylvania",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Immunity",
+          "Gut health",
+          "Energy"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Local/specialty stores"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.71,
+        "value_price": 0.28,
+        "taste_flavor": 0.44,
+        "comparison": 0.6,
+        "health_nutrition": 0.8,
+        "repurchase_intent": 0.64,
+        "quality_issues": 0.43,
+        "convenience": 0.81
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.16,
+        "health_nutrition": 0.3111,
+        "value_price": 0.1,
+        "convenience": 0.3115,
+        "comparison": 0.2,
+        "repurchase_intent": 0.128,
+        "use_case": 0.2219,
+        "quality_issues": 0.1075
+      },
+      "xgb_buy_probability": 95.4
+    },
+    {
+      "audience_id": 90,
+      "segment": "Moms",
+      "demographics": {
+        "age": 32,
+        "gender": "Woman",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Postgraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Homemaker",
+        "children": "Infant (<1 year), Toddler (1-3 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Arizona",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "Immunity",
+          "General wellness"
+        ],
+        "snack_approach": "I choose based on flavor",
+        "shopping_location": "Discount/value stores (Costco, Aldi)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.27,
+        "value_price": 0.33,
+        "taste_flavor": 0.51,
+        "comparison": 0.44,
+        "health_nutrition": 0.5,
+        "repurchase_intent": 0.16,
+        "quality_issues": 0.77,
+        "convenience": 0.88
+      },
+      "predicted_buy_tendency": "weak",
+      "estimated_buy_range": "30-50%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1855,
+        "health_nutrition": 0.1944,
+        "value_price": 0.1179,
+        "convenience": 0.3385,
+        "comparison": 0.1467,
+        "repurchase_intent": 0.032,
+        "use_case": 0.0844,
+        "quality_issues": 0.1925
+      },
+      "xgb_buy_probability": 78.3
+    },
+    {
+      "audience_id": 91,
+      "segment": "Original",
+      "demographics": {
+        "age": 49,
+        "gender": "Man",
+        "household_income": "$60,000 - $79,999",
+        "race_ethnicity": "White",
+        "education": "Postgraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Adult (18+ years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Urban",
+        "region": "Michigan",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Stress / calm",
+          "Immunity",
+          "General wellness",
+          "Gut health",
+          "Energy"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Discount/value stores (Costco, Aldi)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.81,
+        "value_price": 0.35,
+        "taste_flavor": 0.49,
+        "comparison": 0.66,
+        "health_nutrition": 0.66,
+        "repurchase_intent": 0.51,
+        "quality_issues": 0.35,
+        "convenience": 0.79
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1782,
+        "health_nutrition": 0.2567,
+        "value_price": 0.125,
+        "convenience": 0.3038,
+        "comparison": 0.22,
+        "repurchase_intent": 0.102,
+        "use_case": 0.2531,
+        "quality_issues": 0.0875
+      },
+      "xgb_buy_probability": 80.5
+    },
+    {
+      "audience_id": 92,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 26,
+        "gender": "Woman",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "Hispanic or Latino",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "No children",
+        "living_situation": "Live with roommates",
+        "neighborhood_type": "Suburban",
+        "region": "Virginia",
+        "home_owner": "No",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Stress / calm",
+          "Energy"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.75,
+        "value_price": 0.53,
+        "taste_flavor": 0.35,
+        "comparison": 0.58,
+        "health_nutrition": 0.79,
+        "repurchase_intent": 0.38,
+        "quality_issues": 0.49,
+        "convenience": 0.76
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1273,
+        "health_nutrition": 0.3072,
+        "value_price": 0.1893,
+        "convenience": 0.2923,
+        "comparison": 0.1933,
+        "repurchase_intent": 0.076,
+        "use_case": 0.2344,
+        "quality_issues": 0.1225
+      },
+      "xgb_buy_probability": 86.7
+    },
+    {
+      "audience_id": 93,
+      "segment": "Moms",
+      "demographics": {
+        "age": 38,
+        "gender": "Woman",
+        "household_income": "> $200,000",
+        "race_ethnicity": "american indian and white",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Infant (<1 year), Toddler (1-3 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Rural",
+        "region": "Washington",
+        "home_owner": "Yes",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Gut health",
+          "Immunity"
+        ],
+        "snack_approach": "I look for good value",
+        "shopping_location": "Discount/value stores (Costco, Aldi)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.73,
+        "value_price": 0.4,
+        "taste_flavor": 0.48,
+        "comparison": 0.76,
+        "health_nutrition": 0.73,
+        "repurchase_intent": 0.47,
+        "quality_issues": 0.47,
+        "convenience": 0.86
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1745,
+        "health_nutrition": 0.2839,
+        "value_price": 0.1429,
+        "convenience": 0.3308,
+        "comparison": 0.2533,
+        "repurchase_intent": 0.094,
+        "use_case": 0.2281,
+        "quality_issues": 0.1175
+      },
+      "xgb_buy_probability": 94.5
+    },
+    {
+      "audience_id": 94,
+      "segment": "Original",
+      "demographics": {
+        "age": 27,
+        "gender": "Man",
+        "household_income": "$60,000 - $79,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time employed",
+        "children": "Infant (<1 year), Toddler (1-3 years), School aged (6-12 years)",
+        "living_situation": "Live with a significant other",
+        "neighborhood_type": "Urban",
+        "region": "Pennsylvania",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.51,
+        "value_price": 0.33,
+        "taste_flavor": 0.47,
+        "comparison": 0.54,
+        "health_nutrition": 0.66,
+        "repurchase_intent": 0.42,
+        "quality_issues": 0.34,
+        "convenience": 0.79
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1709,
+        "health_nutrition": 0.2567,
+        "value_price": 0.1179,
+        "convenience": 0.3038,
+        "comparison": 0.18,
+        "repurchase_intent": 0.084,
+        "use_case": 0.1594,
+        "quality_issues": 0.085
+      },
+      "xgb_buy_probability": 51.2
+    },
+    {
+      "audience_id": 95,
+      "segment": "Original",
+      "demographics": {
+        "age": 47,
+        "gender": "Woman",
+        "household_income": "$80,000 - $99,999",
+        "race_ethnicity": "White",
+        "education": "Postgraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Part-time employed",
+        "children": "Infant (<1 year), School aged (6-12 years), Adolescent (13-17 years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Suburban",
+        "region": "Arkansas",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Energy"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.77,
+        "value_price": 0.39,
+        "taste_flavor": 0.43,
+        "comparison": 0.75,
+        "health_nutrition": 0.67,
+        "repurchase_intent": 0.58,
+        "quality_issues": 0.46,
+        "convenience": 0.81
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1564,
+        "health_nutrition": 0.2606,
+        "value_price": 0.1393,
+        "convenience": 0.3115,
+        "comparison": 0.25,
+        "repurchase_intent": 0.116,
+        "use_case": 0.2406,
+        "quality_issues": 0.115
+      },
+      "xgb_buy_probability": 93.8
+    },
+    {
+      "audience_id": 96,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 22,
+        "gender": "Non-binary",
+        "household_income": "$40,000 - $59,999",
+        "race_ethnicity": "Black or African American",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Full-time student",
+        "children": "No children",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Suburban",
+        "region": "Indiana",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness",
+          "Stress / calm"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.66,
+        "value_price": 0.18,
+        "taste_flavor": 0.48,
+        "comparison": 0.63,
+        "health_nutrition": 0.69,
+        "repurchase_intent": 0.45,
+        "quality_issues": 0.33,
+        "convenience": 0.78
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1745,
+        "health_nutrition": 0.2683,
+        "value_price": 0.0643,
+        "convenience": 0.3,
+        "comparison": 0.21,
+        "repurchase_intent": 0.09,
+        "use_case": 0.2063,
+        "quality_issues": 0.0825
+      },
+      "xgb_buy_probability": 87.4
+    },
+    {
+      "audience_id": 97,
+      "segment": "Original",
+      "demographics": {
+        "age": 44,
+        "gender": "Man",
+        "household_income": "$80,000 - $99,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "Infant (<1 year), School aged (6-12 years), Adolescent (13-17 years)",
+        "living_situation": "Live with a significant other",
+        "neighborhood_type": "Suburban",
+        "region": "Nevada",
+        "home_owner": "Yes",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Energy"
+        ],
+        "snack_approach": "I look for convenience",
+        "shopping_location": "Grocery chains (Kroger, Safeway, Albertsons)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.8,
+        "value_price": 0.27,
+        "taste_flavor": 0.48,
+        "comparison": 0.54,
+        "health_nutrition": 0.67,
+        "repurchase_intent": 0.45,
+        "quality_issues": 0.41,
+        "convenience": 0.83
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1745,
+        "health_nutrition": 0.2606,
+        "value_price": 0.0964,
+        "convenience": 0.3192,
+        "comparison": 0.18,
+        "repurchase_intent": 0.09,
+        "use_case": 0.25,
+        "quality_issues": 0.1025
+      },
+      "xgb_buy_probability": 93.6
+    },
+    {
+      "audience_id": 98,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 19,
+        "gender": "Man",
+        "household_income": "$40,000 - $59,999",
+        "race_ethnicity": "Hispanic or Latino",
+        "education": "Undergraduate degree",
+        "marital_status": "Married or in a civil union",
+        "employment_status": "Part-time employed, Full-time student",
+        "children": "No children",
+        "living_situation": "Live alone",
+        "neighborhood_type": "Suburban",
+        "region": "Pennsylvania",
+        "home_owner": "Yes",
+        "work_setting": "Remote"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "General wellness"
+        ],
+        "snack_approach": "I like trying new things",
+        "shopping_location": "Natural stores (Whole Foods, Sprouts)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.6,
+        "value_price": 0.23,
+        "taste_flavor": 0.4,
+        "comparison": 0.48,
+        "health_nutrition": 0.59,
+        "repurchase_intent": 0.22,
+        "quality_issues": 0.32,
+        "convenience": 0.79
+      },
+      "predicted_buy_tendency": "moderate",
+      "estimated_buy_range": "50-70%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1455,
+        "health_nutrition": 0.2294,
+        "value_price": 0.0821,
+        "convenience": 0.3038,
+        "comparison": 0.16,
+        "repurchase_intent": 0.044,
+        "use_case": 0.1875,
+        "quality_issues": 0.08
+      },
+      "xgb_buy_probability": 82.0
+    },
+    {
+      "audience_id": 99,
+      "segment": "Original",
+      "demographics": {
+        "age": 32,
+        "gender": "Woman",
+        "household_income": "$60,000 - $79,999",
+        "race_ethnicity": "Black or African American",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Full-time employed",
+        "children": "School aged (6-12 years), Adult (18+ years)",
+        "living_situation": "Live with a husband/wife",
+        "neighborhood_type": "Rural",
+        "region": "California",
+        "home_owner": "Yes",
+        "work_setting": "In-person"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "Immunity",
+          "Energy",
+          "Stress / calm",
+          "General wellness"
+        ],
+        "snack_approach": "I look for good value",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.8,
+        "value_price": 0.26,
+        "taste_flavor": 0.38,
+        "comparison": 0.62,
+        "health_nutrition": 0.68,
+        "repurchase_intent": 0.43,
+        "quality_issues": 0.36,
+        "convenience": 0.85
+      },
+      "predicted_buy_tendency": "strong",
+      "estimated_buy_range": "70-90%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.1382,
+        "health_nutrition": 0.2644,
+        "value_price": 0.0929,
+        "convenience": 0.3269,
+        "comparison": 0.2067,
+        "repurchase_intent": 0.086,
+        "use_case": 0.25,
+        "quality_issues": 0.09
+      },
+      "xgb_buy_probability": 93.6
+    },
+    {
+      "audience_id": 100,
+      "segment": "Gen Z",
+      "demographics": {
+        "age": 25,
+        "gender": "Woman",
+        "household_income": "$100,000 - $149,999",
+        "race_ethnicity": "White",
+        "education": "Undergraduate degree",
+        "marital_status": "Never married",
+        "employment_status": "Part-time employed",
+        "children": "Adult (18+ years)",
+        "living_situation": "Live with a significant other",
+        "neighborhood_type": "Urban",
+        "region": "Illinois",
+        "home_owner": "No",
+        "work_setting": "Hybrid"
+      },
+      "behavioral": {
+        "health_priorities": [
+          "Gut health",
+          "Immunity",
+          "Energy",
+          "General wellness",
+          "Stress / calm"
+        ],
+        "snack_approach": "I try to pick healthier options when I can",
+        "shopping_location": "Big-box stores (Target, Walmart)"
+      },
+      "decision_factor_profile": {
+        "use_case": 0.63,
+        "value_price": 0.33,
+        "taste_flavor": 0.13,
+        "comparison": 0.34,
+        "health_nutrition": 0.72,
+        "repurchase_intent": 0.23,
+        "quality_issues": 0.69,
+        "convenience": 0.81
+      },
+      "predicted_buy_tendency": "weak",
+      "estimated_buy_range": "30-50%",
+      "xgb_rescaled_scores": {
+        "taste_flavor": 0.0473,
+        "health_nutrition": 0.28,
+        "value_price": 0.1179,
+        "convenience": 0.3115,
+        "comparison": 0.1133,
+        "repurchase_intent": 0.046,
+        "use_case": 0.1969,
+        "quality_issues": 0.1725
+      },
+      "xgb_buy_probability": 81.5
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "product": {
+    "name": "Magic Spoon Brain Boost Nootropic Bites",
+    "brand": "Magic Spoon",
+    "price": 3.49,
+    "category": "Health Foods > Functional Snacks > Nootropic Snacks",
+    "description": "Pop-able cereal bites infused with nootropics for clean focus and clarity. Bite-sized cereal snacks crafted with adaptogens, B-vitamins, and protein to support mental clarity and focus. Designed for study sessions, creative work, or gaming, these crunchy bites offer great taste along with a functional boost -- without excessive sugar or stimulants.",
+    "features": [
+      "Nootropic ingredient blend",
+      "High protein, low sugar",
+      "Great for studying or working",
+      "2 oz pouch — $3.49 / 5-pack — $14.99",
+      "Found in the better-for-you snacks section"
+    ]
+  },
+  "competitors": [
+    {
+      "name": "Nature Valley",
+      "brand": "Nature Valley",
+      "price": 4.29,
+      "rating": 4.5,
+      "total_ratings": 15400,
+      "key_feature": "Crunchy oats and honey granola, widely available and affordable whole-grain snack"
+    },
+    {
+      "name": "Clif",
+      "brand": "Clif",
+      "price": 1.59,
+      "rating": 4.6,
+      "total_ratings": 32500,
+      "key_feature": "Plant-based energy bar with sustained energy from organic rolled oats"
+    },
+    {
+      "name": "Olly",
+      "brand": "Olly",
+      "price": 13.99,
+      "rating": 4.3,
+      "total_ratings": 8700,
+      "key_feature": "Tasty, Instagram-friendly gummy vitamins with melatonin, L-theanine, and botanicals for sleep"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "product": {
+    "name": "Magic Spoon No-Crash Clean Energy Bar",
+    "brand": "Magic Spoon",
+    "price": 2.49,
+    "category": "Health Foods > Energy Bars > Clean Energy Bars",
+    "description": "A high-protein, low-sugar bar designed for steady, no-crash energy. A cereal-inspired snack bar made with a protein blend and minimal sugar to deliver clean, sustained energy without the typical afternoon slump. Built for busy days, commutes, classes, and gym sessions, this bar provides a convenient, satisfying way to power through without jitters or sugar spikes.",
+    "features": [
+      "High protein, low sugar",
+      "No artificial colors or preservatives",
+      "Designed for steady energy",
+      "1.6 oz bar — $2.49 / 5-pack — $9.99",
+      "Found in the nutrition / snack bar section"
+    ]
+  },
+  "competitors": [
+    {
+      "name": "RXBAR",
+      "brand": "RXBAR",
+      "price": 2.99,
+      "rating": 4.4,
+      "total_ratings": 48200,
+      "key_feature": "Minimal ingredients (egg whites, dates, nuts) with 12g protein and no added sugar"
+    },
+    {
+      "name": "Clif",
+      "brand": "Clif",
+      "price": 1.59,
+      "rating": 4.6,
+      "total_ratings": 32500,
+      "key_feature": "Plant-based energy bar with sustained energy from organic rolled oats"
+    },
+    {
+      "name": "Kind",
+      "brand": "Kind",
+      "price": 1.79,
+      "rating": 4.5,
+      "total_ratings": 22800,
+      "key_feature": "Simple whole ingredients you can see and pronounce, gluten-free with nuts and dark chocolate"
+    }
+  ]
+}

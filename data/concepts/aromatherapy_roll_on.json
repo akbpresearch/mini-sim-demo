@@ -1,0 +1,42 @@
+{
+  "product": {
+    "name": "CalmKids Night Soothe Aromatherapy Roll-On",
+    "brand": "CalmKids",
+    "price": 9.99,
+    "category": "Health & Household > Aromatherapy > Children's Sleep Aromatherapy",
+    "description": "Lavender-chamomile roll-on to help create a calming bedtime environment. A simple, scent-based bedtime ritual tool for parents seeking predictable nighttime routines. Light, natural oils provide a calming aroma that toddlers associate with winding down. Parents apply to their own wrists or nearby linens -- no supplements needed.",
+    "features": [
+      "Natural essential oils",
+      "Toddler-friendly scent intensity",
+      "No synthetic fragrances",
+      "10 mL roll-on — $9.99",
+      "Found in the baby care / bedtime routine section"
+    ]
+  },
+  "competitors": [
+    {
+      "name": "Zarbee's",
+      "brand": "Zarbee's",
+      "price": 11.99,
+      "rating": 4.4,
+      "total_ratings": 9200,
+      "key_feature": "Pediatrician-recommended children's melatonin gummies with natural flavors, drug-free"
+    },
+    {
+      "name": "Young Living",
+      "brand": "Young Living",
+      "price": 18.99,
+      "rating": 4.5,
+      "total_ratings": 2400,
+      "key_feature": "Seed-to-Seal certified lavender essential oil, popular for diffusing and topical calming use"
+    },
+    {
+      "name": "Plant Therapy",
+      "brand": "Plant Therapy",
+      "price": 9.99,
+      "rating": 4.6,
+      "total_ratings": 5800,
+      "key_feature": "KidSafe essential oil line formulated for children, 100% pure undiluted therapeutic grade"
+    }
+  ]
+}

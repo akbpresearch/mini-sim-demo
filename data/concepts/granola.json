@@ -1,0 +1,42 @@
+{
+  "product": {
+    "name": "Magic Spoon High-Protein Crunch Granola",
+    "brand": "Magic Spoon",
+    "price": 8.49,
+    "category": "Grocery & Gourmet Food > Breakfast Cereal > Protein Granola",
+    "description": "A crunchy, protein-rich granola designed for long-lasting clean energy. This cereal-style granola combines a blend of whey and plant-based proteins with slow-release carbs and low sugar. Designed for mornings that require focus and stamina, the granola offers bold flavor and a satisfying crunch whether eaten in a bowl, on yogurt, or straight from the bag.",
+    "features": [
+      "13g protein per serving",
+      "Gluten-free",
+      "Low sugar",
+      "11 oz bag — $8.49 / 18 oz bag — $12.99",
+      "Found in the cereal and granola section"
+    ]
+  },
+  "competitors": [
+    {
+      "name": "Nature Valley",
+      "brand": "Nature Valley",
+      "price": 4.29,
+      "rating": 4.5,
+      "total_ratings": 15400,
+      "key_feature": "Crunchy oats and honey granola, widely available and affordable whole-grain snack"
+    },
+    {
+      "name": "Purely Elizabeth",
+      "brand": "Purely Elizabeth",
+      "price": 6.99,
+      "rating": 4.5,
+      "total_ratings": 10100,
+      "key_feature": "Ancient grain granola with coconut sugar and superfood ingredients, organic and gluten-free"
+    },
+    {
+      "name": "Trader Joe's",
+      "brand": "Trader Joe's",
+      "price": 3.99,
+      "rating": 4.3,
+      "total_ratings": 850,
+      "key_feature": "Good value store-brand granola with quality ingredients at a lower price point"
+    }
+  ]
+}

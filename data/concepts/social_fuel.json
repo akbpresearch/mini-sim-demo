@@ -1,0 +1,42 @@
+{
+  "product": {
+    "name": "Social Fuel Plant Protein Granola Blasts",
+    "brand": "Social Fuel",
+    "price": 7.99,
+    "category": "Grocery & Gourmet Food > Breakfast Cereal > Plant Protein Granola",
+    "description": "A bold, crunchy, plant-powered granola designed for social snacking. A lively blend of rolled oats, pea protein crisps, pumpkin seeds, maple-cinnamon clusters, and dark chocolate chips. Developed for Gen Z mornings, commutes, and hangouts where taste matters as much as function. This hybrid granola delivers clean energy, plant protein, and crunch without being overly sweet or heavy.",
+    "features": [
+      "12g plant protein",
+      "Good source of fiber",
+      "Gluten-free",
+      "Lightly sweet + bold flavor",
+      "10 oz bag — $7.99"
+    ]
+  },
+  "competitors": [
+    {
+      "name": "Nature Valley",
+      "brand": "Nature Valley",
+      "price": 4.29,
+      "rating": 4.5,
+      "total_ratings": 15400,
+      "key_feature": "Crunchy oats and honey granola, widely available and affordable whole-grain snack"
+    },
+    {
+      "name": "Kashi",
+      "brand": "Kashi",
+      "price": 4.79,
+      "rating": 4.4,
+      "total_ratings": 5200,
+      "key_feature": "Whole-grain, plant-based granola with fiber and protein from seven whole grains"
+    },
+    {
+      "name": "Purely Elizabeth",
+      "brand": "Purely Elizabeth",
+      "price": 6.99,
+      "rating": 4.5,
+      "total_ratings": 10100,
+      "key_feature": "Ancient grain granola with coconut sugar and superfood ingredients, organic and gluten-free"
+    }
+  ]
+}

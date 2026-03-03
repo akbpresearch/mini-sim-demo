@@ -1,0 +1,42 @@
+{
+  "product": {
+    "name": "CalmKids Protein Granola Minis",
+    "brand": "CalmKids",
+    "price": 5.99,
+    "category": "Grocery & Gourmet Food > Kids' Snacks > Protein Granola Bites",
+    "description": "Soft, toddler-friendly granola minis offering gentle morning energy. Bite-sized oat and hemp protein granola clusters lightly sweetened with fruit puree. The soft texture is safe for toddlers learning to chew, and the gentle protein supports morning energy without overstimulation. Perfect for breakfast, snacks, or outings.",
+    "features": [
+      "4g gentle protein",
+      "No artificial sweeteners",
+      "Soft texture for toddlers",
+      "6 mini-pack box — $5.99",
+      "Found in the toddler snacks section"
+    ]
+  },
+  "competitors": [
+    {
+      "name": "Kind",
+      "brand": "Kind",
+      "price": 1.79,
+      "rating": 4.5,
+      "total_ratings": 22800,
+      "key_feature": "Simple whole ingredients you can see and pronounce, gluten-free with nuts and dark chocolate"
+    },
+    {
+      "name": "Clif",
+      "brand": "Clif",
+      "price": 1.59,
+      "rating": 4.6,
+      "total_ratings": 32500,
+      "key_feature": "Plant-based energy bar with sustained energy from organic rolled oats"
+    },
+    {
+      "name": "Made Good Granola Bites",
+      "brand": "Made Good Granola",
+      "price": 4.99,
+      "rating": 4.4,
+      "total_ratings": 2100,
+      "key_feature": "Allergy-friendly, school-safe granola bites with hidden vegetable nutrients for kids"
+    }
+  ]
+}
