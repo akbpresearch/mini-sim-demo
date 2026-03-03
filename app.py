@@ -130,6 +130,27 @@ def load_audiences():
 
 # ── Engine Functions ─────────────────────────────────────────────────
 
+def normalize_concept(raw):
+    """Normalize different concept JSON formats into the engine's expected schema."""
+    # Already in engine format
+    if "product_headline" in raw:
+        return raw
+    # Nested {product: {...}, competitors: [...]} format
+    if "product" in raw and isinstance(raw["product"], dict):
+        p = raw["product"]
+        return {
+            "product_headline": p.get("name", ""),
+            "brand_name": p.get("brand", ""),
+            "consumer_insight": p.get("description", ""),
+            "main_benefits": p.get("features", []),
+            "reasons_to_believe": [],
+            "price_point": f"${p['price']}" if "price" in p else "",
+            "pack_size": p.get("category", ""),
+            "competitors": raw.get("competitors", []),
+        }
+    return raw
+
+
 def _join_items(items):
     """Join a list that may contain strings or dicts into a readable string."""
     parts = []
@@ -405,7 +426,7 @@ def main():
             )
             if uploaded:
                 try:
-                    concept = json.load(uploaded)
+                    concept = normalize_concept(json.load(uploaded))
                     st.success(f"Loaded: {concept.get('product_headline', 'Unknown')}")
                 except json.JSONDecodeError:
                     st.error("Invalid JSON file")
@@ -414,7 +435,9 @@ def main():
                 try:
                     with open(path) as fh:
                         d = json.load(fh)
-                    return isinstance(d, dict) and "product_headline" in d
+                    if not isinstance(d, dict):
+                        return False
+                    return "product_headline" in d or "product" in d
                 except Exception:
                     return False
 
@@ -422,11 +445,17 @@ def main():
             unique = [f for f in candidates if _is_concept_json(f)]
 
             if unique:
-                labels = [f.stem.replace("_", " ").title() for f in unique]
-                choice = st.selectbox("Select concept", labels, index=0)
-                idx = labels.index(choice)
+                # Build labels from actual product names
+                label_map = []
+                for f in unique:
+                    with open(f) as fh:
+                        d = json.load(fh)
+                    n = normalize_concept(d)
+                    label_map.append(n.get("product_headline", f.stem.replace("_", " ").title()))
+                choice = st.selectbox("Select concept", label_map, index=0)
+                idx = label_map.index(choice)
                 with open(unique[idx]) as f:
-                    concept = json.load(f)
+                    concept = normalize_concept(json.load(f))
             else:
                 st.warning("No concept JSONs found in data/concepts/")
 
